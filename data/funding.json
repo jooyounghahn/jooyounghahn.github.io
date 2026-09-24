@@ -1,0 +1,86 @@
+{
+ "_source": "CV_Hahn_without_publication.tex, section Funding; only awarded items are listed. Three unsuccessful proposals in the CV (EIC Pathfinder 2022/2023, FET-Open 2015/2016, Humboldt Research Fellowship 2012) are left out on purpose.",
+ "lede": "Grants, fellowships and industrial support.",
+ "groups": [
+  {
+   "title": "Grants and fellowships",
+   "items": [
+    {
+     "period": "2027–2029",
+     "title": "MIND-MAP: Microglia Integrative Network of Dynamics, Morphology, Analysis and Prediction",
+     "funder": "Czech Science Foundation (GAČR), 27-25263L",
+     "role": "Principal investigator of the Czech part",
+     "note": "Microglia morphology in 3D + time, by PDE and deep-learning segmentation and by topological data analysis, with partners at the University of Warsaw and at ISTA in Klosterneuburg."
+    },
+    {
+     "period": "2022–2025",
+     "title": "Numerical methods for computational evolving manifolds",
+     "funder": "SASPRO2, Horizon 2020 Marie Skłodowska-Curie COFUND Action Programme",
+     "role": "Principal investigator",
+     "note": "Hosted by the Slovak University of Technology in Bratislava."
+    },
+    {
+     "period": "2024",
+     "title": "Application of the eikonal equation and surface-to-surface radiation",
+     "funder": "Global Visiting Fellowship, Seoul National University",
+     "role": "Fellow",
+     "note": "June to August 2024."
+    },
+    {
+     "period": "2023",
+     "title": "Neural network solver for PDEs",
+     "funder": "Global Visiting Fellowship, Seoul National University",
+     "role": "Fellow",
+     "note": "June to August 2023."
+    },
+    {
+     "period": "2005–2006",
+     "title": "Visiting researcher at the Institute for Mathematics and its Applications, Minneapolis",
+     "funder": "Korean Research Foundation, KRF-2006-311-C00015",
+     "role": "",
+     "note": "August 2005 to July 2006."
+    }
+   ]
+  },
+  {
+   "title": "Industry and consulting",
+   "items": [
+    {
+     "period": "2022–2026",
+     "title": "AVL AST University Partnership Program",
+     "funder": "AVL List GmbH, Graz",
+     "role": "Principal investigator",
+     "note": "In-kind sponsorship: licenses for AVL FIRE™ and PreonLab."
+    },
+    {
+     "period": "2020",
+     "title": "Exploration of overseas partners and R&D project planning for real-time simulation cyber-physical systems",
+     "funder": "K-TAG technical consulting for EUREKA / Eurostars",
+     "role": "Technical expert",
+     "note": "With UVC Co., Ltd."
+    },
+    {
+     "period": "2019",
+     "title": "Health care system for emotion and stress measurement based on image processing",
+     "funder": "K-TAG technical consulting for EUREKA / Eurostars",
+     "role": "Technical expert",
+     "note": "With Inforshare."
+    },
+    {
+     "period": "2018",
+     "title": "Analysis and prediction of evolving particulate matter in the air",
+     "funder": "K-TAG technical consulting for EUREKA / Eurostars",
+     "role": "Technical expert",
+     "note": "With Metariver Technology Co., Ltd. A K-TAG award for consulting followed in 2019."
+    },
+    {
+     "period": "2017",
+     "title": "Finite volume level-set methods for the G-equation in AVL FIRE™",
+     "funder": "Industrial project, AVL List GmbH",
+     "role": "Project leader",
+     "note": "February to July 2017."
+    }
+   ]
+  }
+ ]
+}

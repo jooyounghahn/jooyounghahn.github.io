@@ -387,7 +387,7 @@
  "notice": {
   "until": "2026-10-31",
   "link_text": "Details",
-  "text": "Funded 3-year PhD position in the GAČR project <b>MIND-MAP</b>: PDEs, deep learning and geometry-informed topological data analysis for 3D&nbsp;+&nbsp;time microglia imaging. Apply by 31&nbsp;October&nbsp;2026."
+  "text": "Funded 3-year PhD position in the GAČR project <b>MIND-MAP</b>: PDEs, deep learning and geometry-informed topological data analysis for 3D&nbsp;+&nbsp;time microglia imaging."
  },
  "meta_description": "Jooyoung Hahn, Assistant Professor of Applied Mathematics, Czech Technical University in Prague. Finite-volume methods on polyhedral meshes, geometry-informed topological data analysis, neural-network solvers for PDEs.",
  "build": {

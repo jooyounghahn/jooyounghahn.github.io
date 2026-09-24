@@ -130,10 +130,6 @@ h2.sec:first-child{margin-top:0}
 .intro p+p{margin-top:.8rem}
 .notice{margin:1.4rem 0 0;padding:.1rem 0 .1rem .9rem;border-left:3px solid var(--em);max-width:44rem}
 .notice p{font-size:.95rem;line-height:1.5}
-@media not all and WIDE{
-  .wrap{display:flex;flex-direction:column}
-  .notice{order:-1;margin:0 0 1.3rem}
-}
 
 .cats{border-bottom:1px solid var(--rule)}
 details.cat{border-top:1px solid var(--rule)}
@@ -218,17 +214,18 @@ details.cat[open] .cm .open::after{content:" \\25B4"}
   .yr h3{margin:.05rem 0 0}
 }
 
-/* ------------------------------------------------------------ talks */
-.talks{list-style:none;margin:0;padding:0}
-.talks li{padding:.75rem 0;border-top:1px solid var(--rule);display:grid;gap:.15rem}
-.talks li:last-child{border-bottom:1px solid var(--rule)}
-.talks .td{font-size:.87rem;color:var(--muted);white-space:nowrap}
-.talks .tt{font-weight:600;font-size:.95rem;line-height:1.4}
-.talks .te{font-size:.87rem;color:var(--muted);line-height:1.45}
-.talks .te a{white-space:nowrap}
+/* ------------------------------------------------ talks and funding (date | title | detail) */
+.dlist{list-style:none;margin:0;padding:0}
+.dlist li{padding:.75rem 0;border-top:1px solid var(--rule);display:grid;gap:.15rem}
+.dlist li:last-child{border-bottom:1px solid var(--rule)}
+.dlist .td{font-size:.87rem;color:var(--muted);white-space:nowrap}
+.dlist .tt{font-weight:600;font-size:.95rem;line-height:1.4}
+.dlist .te{font-size:.87rem;color:var(--muted);line-height:1.45}
+.dlist .te+.te{margin-top:.15rem}
+.dlist .te a{white-space:nowrap}
 @media (min-width:720px){
-  .talks li{grid-template-columns:5.6rem minmax(0,1fr);gap:1rem}
-  .talks .td{padding-top:.1rem}
+  .dlist li{grid-template-columns:5.6rem minmax(0,1fr);gap:1rem}
+  .dlist .td{padding-top:.1rem}
 }
 
 /* ------------------------------------------------------------ footer */

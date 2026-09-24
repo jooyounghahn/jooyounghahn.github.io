@@ -167,6 +167,7 @@ NAV = [  # id, sidebar label, phone label, file
     ("research", "Research", "Research", "index.html"),
     ("interests", "Research interests", "Interests", "interests.html"),
     ("publications", "Publications", "Papers", "publications.html"),
+    ("funding", "Funding", "Funding", "funding.html"),
     ("talks", "Talks", "Talks", "talks.html"),
 ]
 
@@ -283,13 +284,6 @@ def page_research(content, known, pubs_by_key, out: Path) -> str:
     if intro:
         parts.append('<div class="intro">' + "".join(
             f"<p>{txt(x.strip())}</p>" for x in intro.split("\n\n") if x.strip()) + "</div>")
-
-    n = content.get("notice")
-    if n and n.get("text"):
-        until = f' data-until="{esc(n["until"])}"' if n.get("until") else ""
-        link = (f' <a href="{esc(n["href"])}" target="_blank" rel="noopener">{esc(n.get("link_text", "Details"))}</a>'
-                if n.get("href") else "")
-        parts.append(f'<div class="notice"{until}><p>{n["text"]}{link}</p></div>')
 
     pmeta = content.get("papers", {})
     blocks = []
@@ -445,6 +439,33 @@ def page_publications(pubs) -> str:
     return "\n".join(parts)
 
 
+def notice_html(content) -> str:
+    n = content.get("notice") or {}
+    if not n.get("text"):
+        return ""
+    until = f' data-until="{esc(n["until"])}"' if n.get("until") else ""
+    link = (f' <a href="{esc(n["href"])}" target="_blank" rel="noopener">{esc(n.get("link_text", "Details"))}</a>'
+            if n.get("href") else "")
+    return f'<div class="notice"{until}><p>{n["text"]}{link}</p></div>'
+
+
+def page_funding(funding, content) -> str:
+    parts = ['<h1 class="page">Funding</h1>']
+    if funding.get("lede"):
+        parts.append(f'<p class="lede">{esc(funding["lede"])}</p>')
+    parts.append(notice_html(content))
+    for g in funding.get("groups", []):
+        lis = []
+        for it in g.get("items", []):
+            meta = " · ".join(x for x in (it.get("funder"), it.get("role")) if x)
+            note = f'<p class="te">{txt(it["note"])}</p>' if it.get("note") else ""
+            lis.append(f'<li><span class="td">{esc(it["period"])}</span><div>'
+                       f'<p class="tt">{txt(it["title"])}</p>'
+                       f'<p class="te">{txt(meta)}</p>{note}</div></li>')
+        parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
+    return "\n".join(x for x in parts if x)
+
+
 def page_talks(talks) -> str:
     def items(lst):
         out = []
@@ -460,8 +481,8 @@ def page_talks(talks) -> str:
     parts = ['<h1 class="page">Talks</h1>']
     if talks.get("lede"):
         parts.append(f'<p class="lede">{talks["lede"]}</p>')
-    parts.append(f'<h2 class="sec">Invited talks</h2><ol class="talks">{items(talks.get("invited", []))}</ol>')
-    parts.append(f'<h2 class="sec">Minisymposia organized</h2><ol class="talks">{items(talks.get("minisymposia", []))}</ol>')
+    parts.append(f'<h2 class="sec">Invited talks</h2><ol class="dlist">{items(talks.get("invited", []))}</ol>')
+    parts.append(f'<h2 class="sec">Minisymposia organized</h2><ol class="dlist">{items(talks.get("minisymposia", []))}</ol>')
     return "\n".join(parts)
 
 
@@ -490,6 +511,7 @@ def build(out_dir: str = "docs") -> Path:
     papers = load("papers.json")
     pubs = load("publications.json")
     talks = load("talks.json")
+    funding = load("funding.json")
     interests = load("interests.json")
     known = {p["key"]: p for p in papers.get("papers", [])}
     pubs["entries"] = [e for e in pubs.get("entries", []) if not e.get("hidden")]
@@ -542,6 +564,7 @@ def build(out_dir: str = "docs") -> Path:
         "index.html": ("research", "Research", page_research(content, known, pubs_by_key, tmp)),
         "interests.html": ("interests", "Research interests", page_interests(interests, tmp)),
         "publications.html": ("publications", "Publications", page_publications(pubs)),
+        "funding.html": ("funding", "Funding", page_funding(funding, content)),
         "talks.html": ("talks", "Talks", page_talks(talks)),
     }
     if PROBLEMS:
