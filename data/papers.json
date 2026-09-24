@@ -1,0 +1,161 @@
+{
+ "source": "../../Ref_Papers/PAPERS_HAHN",
+ "count": 31,
+ "papers": [
+  {
+   "key": "Duan2012_AFastAugmentedLagrangianMethodEulersElas",
+   "year": 2012,
+   "title": "A Fast Augmented Lagrangian Method for Euler's Elastica Model"
+  },
+  {
+   "key": "Duan2013_FastAugmentedLagrangianMethodEulersElastica",
+   "year": 2013,
+   "title": "A Fast Augmented Lagrangian Method for Euler's Elastica Models"
+  },
+  {
+   "key": "Frolkovic2021_FluxBalancedApproximationLeastSquaresGra",
+   "year": 2021,
+   "title": "FLUX BALANCED APPROXIMATION WITH LEAST-SQUARES GRADIENT FOR DIFFUSION EQUATION ON POLYHEDRAL MESH"
+  },
+  {
+   "key": "Hahn2009_ANonlinearStructureTensorDiffusivityMatr",
+   "year": 2009,
+   "title": "A Nonlinear Structure Tensor with the Diffusivity Matrix Composed of the Image Gradient"
+  },
+  {
+   "key": "Hahn2010_GeometricAttractionDrivenFlowImageSegmen",
+   "year": 2010,
+   "title": "Geometric attraction-driven flow for image segmentation and boundary detection"
+  },
+  {
+   "key": "Hahn2011_OrientationMatchingMinimizationImageDeno",
+   "year": 2011,
+   "title": "Orientation-Matching Minimization for Image Denoising and Inpainting"
+  },
+  {
+   "key": "Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt",
+   "year": 2012,
+   "title": "Augmented Lagrangian Method for Generalized TV-Stokes Model"
+  },
+  {
+   "key": "Hahn2012_FastAlgorithmsPElasticaEnergyApplication",
+   "year": 2012,
+   "title": "Fast Algorithms for -elastica Energy with the Application to Image Inpainting and Curve Reconstruction"
+  },
+  {
+   "key": "Hahn2013_StrokeBasedSurfaceReconstruction",
+   "year": 2013,
+   "title": "Stroke-Based Surface Reconstruction"
+  },
+  {
+   "key": "Hahn2017_InflowGradientFiniteVolumeMethodPropagat",
+   "year": 2017,
+   "title": "Inflow-Based Gradient Finite Volume Method for a Propagation in a Normal Direction in a Polyhedron Mesh"
+  },
+  {
+   "key": "Hahn2017_SemiImplicitLevelSetMethodInflowBasedGradien",
+   "year": 2017,
+   "title": "Semi-implicit Level Set Method with Inflow-Based Gradient in a Polyhedron Mesh"
+  },
+  {
+   "key": "Hahn2019_IterativeInflowImplicitOutflowExplicitFi",
+   "year": 2019,
+   "title": "Iterative inflow-implicit outflow-explicit finite volume scheme for level-set equations on polyhedron meshes"
+  },
+  {
+   "key": "Hahn2020_CellCenteredFiniteVolumeMethodRegularize",
+   "year": 2020,
+   "title": "Cell-Centered Finite Volume Method for Regularized Mean Curvature Flow on Polyhedral Meshes"
+  },
+  {
+   "key": "Hahn2022_FiniteVolumeMethodSonerBoundaryCondition",
+   "year": 2022,
+   "title": "Finite volume method with the Soner boundary condition for computing the signed distance function on polyhedral meshes"
+  },
+  {
+   "key": "Hahn2023_SecondOrderAccurateFiniteVolumeMethodGEq",
+   "year": 2023,
+   "title": "Second-order accurate finite volume method for G-equation on polyhedral meshes"
+  },
+  {
+   "key": "Hahn2024_LaplacianRegularizedEikonalEquationSoner",
+   "year": 2024,
+   "title": "Laplacian regularized eikonal equation with Soner boundary condition on polyhedral meshes"
+  },
+  {
+   "key": "Han2026_AStochasticVanishingViscosityApproachEik",
+   "year": 2026,
+   "title": "A stochastic vanishing viscosity approach for eikonal equations"
+  },
+  {
+   "key": "Hintermuller2014_FunctionalAnalyticNumericalIssuesSplitti",
+   "year": 2014,
+   "title": "Functional-analytic and numerical issues in splitting methods for total variation-based image reconstruction"
+  },
+  {
+   "key": "Hwang2026_LocalizedEstimationConditionNumbersMILUGraph",
+   "year": 2026,
+   "title": "LOCALIZED ESTIMATION OF CONDITION NUMBERS FOR MILU PRECONDITIONERS ON A GRAPH"
+  },
+  {
+   "key": "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
+   "year": 2026,
+   "title": "Neural Augmented Lagrangian Method for Approximating Viscosity Solution of the Eikonal Equation"
+  },
+  {
+   "key": "Koljancic2025_UntargetedChemicalProfilingTwoDimensiona",
+   "year": 2025,
+   "title": "Untargeted Chemical Profiling of Two-Dimensional Gas Chromatography Coupled with High-Resolution Mass Spectrometry Data for Botrytized Wines via Topological Data Analysis"
+  },
+  {
+   "key": "Kwon2008_AFastSphericalInflationMethodCerebralCor",
+   "year": 2008,
+   "title": "A Fast Spherical Inflation Method of the Cerebral Cortex by Deformation of a Simplex Mesh on the Polar Coordinates"
+  },
+  {
+   "key": "Lee2007_AVariationalApproachBlendingWarpingNonOv",
+   "year": 2007,
+   "title": "A variational approach to blending based on warping for non-overlapped images"
+  },
+  {
+   "key": "Park2014_IMAGESEGMENTATIONSTATISTICALVARIATIONALF",
+   "year": 2014,
+   "title": "IMAGE SEGMENTATION BASED ON THE STATISTICAL VARIATIONAL FORMULATION USING THE LOCAL REGION INFORMATION"
+  },
+  {
+   "key": "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow",
+   "year": 2023,
+   "title": "-Poisson surface reconstruction in curl-free flow from point clouds"
+  },
+  {
+   "key": "Park2024_ReSDF",
+   "year": 2024,
+   "title": "ReSDF: Redistancing implicit surfaces using neural networks"
+  },
+  {
+   "key": "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
+   "year": 2026,
+   "title": "Spatial Analysis of Malignant-Immune Cell Interactions in the Tumor Microenvironment Using Topological Data Analysis"
+  },
+  {
+   "key": "Pyszczek2020_NumericalModelingSparkIgnitionInternalCo",
+   "year": 2020,
+   "title": "Numerical Modeling of Spark Ignition in Internal Combustion Engines"
+  },
+  {
+   "key": "SukhoLee2006_ConductivityImageReconstructionDefective",
+   "year": 2006,
+   "title": "Conductivity Image Reconstruction From Defective Data in MREIT: Numerical Simulation and Animal Experiment"
+  },
+  {
+   "key": "Tai2009_ImageDenoisingTVStokesEquationOrientationMat",
+   "year": 2009,
+   "title": "Image Denoising Using TV-Stokes Equation with an Orientation-Matching Minimization"
+  },
+  {
+   "key": "Tai2011_AFastAlgorithmEulerSElasticaModelAugment",
+   "year": 2011,
+   "title": "A Fast Algorithm for Euler's Elastica Model Using Augmented Lagrangian Method"
+  }
+ ]
+}

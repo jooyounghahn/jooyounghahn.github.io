@@ -1,0 +1,148 @@
+{
+ "title": "Research interests",
+ "lede": "Ongoing research topics of the Geometry-informed Data Analysis Group. Each figure is computed on a small synthetic example. Students who would like to write a thesis on one of these topics are welcome to get in touch.",
+ "groups": [
+  "PDEs and scientific machine learning",
+  "Segmentation and shape of cells",
+  "Topology of biological data",
+  "Topology in chemistry and materials",
+  "Topology of signals and flows"
+ ],
+ "topics": [
+  {
+   "id": "SciML_PDEs",
+   "group": "PDEs and scientific machine learning",
+   "label": "Neural-network solvers for nonlinear PDEs",
+   "description": "Neural networks can solve PDEs by training on the equation itself instead of labeled data. For the eikonal equation, a plain residual loss often converges to a wrong solution, because the viscosity solution is not the only almost-everywhere solution. Losses built from vanishing viscosity, augmented Lagrangian forms or stochastic representations recover it, and are compared with finite-volume and finite-element solvers.",
+   "figure": "assets/interests/SciML_PDEs.png",
+   "alt": "Network solutions converging to the tent-shaped eikonal solution; wavefronts bending around a slow region",
+   "script": "assets/interests/src/SciML_PDEs.py"
+  },
+  {
+   "id": "ROM_PINN",
+   "group": "PDEs and scientific machine learning",
+   "label": "Learned reduced-order models for reacting flows",
+   "description": "Detailed simulations of reacting flows, such as char combustion in fluidized beds, are too slow for design studies. A reduced-order model replaces them by a few ordinary differential equations for the amplitudes of the dominant POD modes, fitted by Operator Inference or by physics-informed training. Test problems show when adding physics to the loss improves the forecast.",
+   "figure": "assets/interests/ROM_PINN.png",
+   "alt": "Swaying plume from a 4608-unknown simulation, its first three POD modes, and the plume predicted by 10 equations",
+   "script": "assets/interests/src/ROM_PINN.py"
+  },
+  {
+   "id": "Microglia",
+   "group": "Segmentation and shape of cells",
+   "label": "Level-set and neural-network segmentation of microglia",
+   "description": "Microglia, the brain's immune cells, change shape after injury and in disease, and their thin, faint branches are hard to segment. The Chan-Vese level-set model is combined with a U-Net trained on the Chan-Vese energy as a label-free loss, after TGV denoising and ridge filtering. Results are compared with the pure variational model and with Cellpose.",
+   "figure": "assets/interests/Microglia.png",
+   "alt": "Noisy synthetic branched cell beside its level-set function, whose red zero contour outlines the cell",
+   "script": "assets/interests/src/Microglia.py"
+  },
+  {
+   "id": "BATMAP",
+   "group": "Segmentation and shape of cells",
+   "label": "Cell segmentation in brown fat tissue",
+   "description": "Brown fat cells shift from many small lipid droplets toward one large droplet when the tissue stays warm and idle. Measuring this cell by cell requires segmenting tightly packed cells whose membranes are faint and often broken. Level-set active contours and subjective surfaces, which close gaps in broken outlines, are combined with Cellpose.",
+   "figure": "assets/interests/BATMAP.png",
+   "alt": "Synthetic packed fat-cell tissue; fronts grow from cell centers and meet at membranes, closing gaps (carmine).",
+   "script": "assets/interests/src/BATMAP.py"
+  },
+  {
+   "id": "TDA_skeleton",
+   "group": "Segmentation and shape of cells",
+   "label": "Topology of microglia branching in the retina",
+   "description": "Retinal microglia change their branching when photoreceptors degenerate or the optic nerve is injured. The Topological Morphology Descriptor turns each 3-D cell skeleton into a persistence barcode with one bar per branch. Barcodes, persistence images and Betti curves are compared with classical morphometrics such as Sholl analysis, to see how early they detect degeneration.",
+   "figure": "assets/interests/TDA_skeleton.png",
+   "alt": "Branching cell-like tree beside its barcode; each branch becomes a bar measured by distance from the cell body.",
+   "script": "assets/interests/src/TDA_skeleton.py"
+  },
+  {
+   "id": "SpatialTranscriptomics",
+   "group": "Topology of biological data",
+   "label": "Co-location of glial cells in brain tissue",
+   "description": "Spatial transcriptomics gives every cell in a brain slice a position, a type and state scores, some linked to disease. Disease-associated oligodendrocytes and astrocytes are tested for sitting closer together in diseased than in healthy tissue. Persistent homology of a score density selects the high-score region, fast marching computes eikonal distances to it inside the tissue, and the result is compared with Ripley's cross K-function.",
+   "figure": "assets/interests/SpatialTranscriptomics.png",
+   "alt": "Synthetic tissue with a cavity: high-score cell region, distance contours, and an astrocyte's path bending around the gap.",
+   "script": "assets/interests/src/SpatialTranscriptomics.py"
+  },
+  {
+   "id": "Microbiome",
+   "group": "Topology of biological data",
+   "label": "Co-abundance modules in gut microbiome time series",
+   "description": "After antibiotics or a change of diet, groups of gut bacteria often rise or fall together. In public gut time series, non-negative matrix factorization groups the taxa into modules, and Ball Mapper turns their time profiles into a graph. Modules that stay together across many ranks and ball radii are candidates for bacteria that respond to the same event.",
+   "figure": "assets/interests/Microbiome.png",
+   "alt": "Taxa counts by team around an antibiotic course, and a Ball Mapper graph colored by the same teams.",
+   "script": "assets/interests/src/Microbiome.py"
+  },
+  {
+   "id": "TDA_ORCA",
+   "group": "Topology of biological data",
+   "label": "DNA folding in single cells",
+   "description": "ORCA microscopy traces DNA in single cells as 3-D curves of a few dozen points, often with many of them missing. Each trace is turned into rotation-free numbers from its internal distances, and Mapper and Ball Mapper graphs summarize thousands of traces as a network of typical folds. Permutation tests ask which folds become more or less common when a CRISPR-based protein only binds the DNA or also marks it for silencing.",
+   "figure": "assets/interests/TDA_ORCA.png",
+   "alt": "Ball Mapper graph of synthetic DNA traces colored by condition, with labeled distance maps of loop, globule and two-domain folds.",
+   "script": "assets/interests/src/TDA_ORCA.py"
+  },
+  {
+   "id": "SERS",
+   "group": "Topology of biological data",
+   "label": "Disease classification from surface-enhanced Raman spectra",
+   "description": "Surface-enhanced Raman spectra (SERS) of body fluids are measured many times per person, and the intensity jumps between nanoparticle hotspots. When one person's repeats fall in both the training and the test set, a classifier learns the person instead of the disease. Spectrum-level and person-grouped splits are compared, using PCA, kernel-density modes and Ball Mapper, to measure how much this leakage inflates accuracy.",
+   "figure": "assets/interests/SERS.png",
+   "alt": "Ill and healthy spectra form per-person clusters; accuracy is 0.92 for random splits but 0.59 when split by person.",
+   "script": "assets/interests/src/SERS.py"
+  },
+  {
+   "id": "MultiChromat",
+   "group": "Topology in chemistry and materials",
+   "label": "Trie indexing of GC×GC–MS food spectra",
+   "description": "GC×GC–MS records hundreds of thousands of mass spectra per sample; the wine, coffee and honey data exceed 800 GB. Each spectrum is read as a word of fragment masses, from most to least intense, and all spectra form one trie, so spectra with equal leading masses share a branch. The trie is used to ask which spectra, read as chemical words, two samples share and which occur in only one.",
+   "figure": "assets/interests/MultiChromat.png",
+   "alt": "Mass spectrum with three highlighted peaks above a tree of many spectra; its path follows masses 91, 105, 77.",
+   "script": "assets/interests/src/MultiChromat.py"
+  },
+  {
+   "id": "IPL_GTA",
+   "group": "Topology in chemistry and materials",
+   "label": "Pore topology and ion transport in electrodes",
+   "description": "Two porous electrodes with the same porosity can transport ions very differently, because of bottlenecks and dead-end pores. For supercapacitor electrodes, persistent homology of the distance-to-wall map, the critical radius and the persistent Laplacian are compared with the tortuosity from a finite-volume diffusion solver. Synthetic 2-D and 3-D structures test which numbers predict transport better than porosity.",
+   "figure": "assets/interests/IPL_GTA.png",
+   "alt": "Porous medium colored by distance to wall with the bottleneck disk marked, beside diffusion flux lines through open channels.",
+   "script": "assets/interests/src/IPL_GTA.py"
+  },
+  {
+   "id": "TDA_Coating_LM",
+   "group": "Topology in chemistry and materials",
+   "label": "Edge profiles in slot-die coating",
+   "description": "In slot-die coating of battery electrodes, the film edge often grows a ridge, a dip or several bumps, and the edge strip becomes waste. One-dimensional persistent homology gives every hill of an edge profile together with its prominence. These features are matched to shape labels and related to dimensionless process numbers, to find which settings give a clean edge.",
+   "figure": "assets/interests/TDA_Coating_LM.png",
+   "alt": "Synthetic coating edge profile with bumps and a ridge; vertical bars mark each peak's prominence, short bars mark noise.",
+   "script": "assets/interests/src/TDA_Coating_LM.py"
+  },
+  {
+   "id": "EEG",
+   "group": "Topology of signals and flows",
+   "label": "Ear-EEG signals during mental tasks",
+   "description": "A brain-computer interface with eight electrodes behind the ears is meant to separate mental arithmetic from silent singing. Takens' delay embedding turns the signals into point clouds, and persistent homology measures their loops. Phase-randomized surrogates, which keep the power spectrum, test whether this shape carries information about the task beyond the spectrum.",
+   "figure": "assets/interests/EEG.png",
+   "alt": "Noisy 10 Hz rhythm, its delay embedding forming a ring, and a barcode with one long loop bar.",
+   "script": "assets/interests/src/EEG.py"
+  },
+  {
+   "id": "TDA_velocity",
+   "group": "Topology of signals and flows",
+   "label": "Streaks in wall turbulence",
+   "description": "Next to a wall, turbulent flow organizes into long streaks of fast and slow fluid, usually described by averaged statistics. Sublevel-set persistent homology records the islands and loops in wall-parallel slices of the velocity from a channel-flow simulation. Streak counts and spacing are compared with two-point correlations, and phase-randomized surrogates test whether topology shows more than the averages.",
+   "figure": "assets/interests/TDA_velocity.png",
+   "alt": "Velocity slice with outlined low-speed streaks beside a barcode where six long bars stand out from short noise bars.",
+   "script": "assets/interests/src/TDA_velocity.py"
+  },
+  {
+   "id": "TDA_sound",
+   "group": "Topology of signals and flows",
+   "label": "Sound of rolling steel balls",
+   "description": "Recordings of steel balls rolling down a slide reveal whether a surface is standard, coated or damaged. Sliding-window embedding turns a sound clip into a point cloud: a periodic sound traces a loop, two incommensurate tones fill a torus, and persistent homology measures these shapes. Topological and spectrogram-based classifiers are compared when noise is added or the setup changes.",
+   "figure": "assets/interests/TDA_sound.png",
+   "alt": "Two-tone sounds as sliding-window shapes: ratio 3:2 gives a closed knot on a torus, ratio 1:√2 fills the torus.",
+   "script": "assets/interests/src/TDA_sound.py"
+  }
+ ]
+}

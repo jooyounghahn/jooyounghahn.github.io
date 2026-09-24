@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+single.html
+data/content.backup.json
+
+# generated from the paper archive — rebuild with build/scan_papers.py.
+# papers.local.json holds abstracts and author e-mails: never published.
+assets/thumbs/
+data/papers.local.json
+
+# old single-page editor, kept locally only
+build/_retired/
+# temporary build folder
+docs.tmp/

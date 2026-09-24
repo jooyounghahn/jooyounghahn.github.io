@@ -1,0 +1,1300 @@
+{
+ "_source": "CV_Hahn/CV_in_homepage/publication_Hahn.tex, verified against Crossref and doi.org on 2026-09-24",
+ "lede": "By type and year. Also on <a href=\"https://scholar.google.com/citations?user=4w2vNhcAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> and <a href=\"https://orcid.org/0000-0003-4357-1009\" target=\"_blank\" rel=\"noopener\">ORCID</a>.",
+ "entries": [
+  {
+   "year": 2026,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jihun Han",
+    "Jooyoung Hahn"
+   ],
+   "title": "A stochastic vanishing viscosity approach for eikonal equations",
+   "venue": "Journal of Computational Physics",
+   "volume": "564",
+   "issue": "",
+   "pages": "115154",
+   "doi": "10.1016/j.jcp.2026.115154",
+   "url": "",
+   "paper_key": "Han2026_AStochasticVanishingViscosityApproachEik",
+   "evidence": "Re-verified: doi.org 200 -> Elsevier PII S0021999126005061; Crossref journal-article, vol 564, article 115154, issued Nov 2026, authors Han, Hahn. Library .md is the published version. Tex had only SSRN 10.2139/ssrn.5352686 (older SSRN postings 5340721/5352686 are superseded)."
+  },
+  {
+   "year": 2026,
+   "type": "journal",
+   "status": "in press",
+   "authors": [
+    "Seol Ah Park",
+    "Davide Gurnari",
+    "Paweł Dłotko",
+    "Yongsoo Kim",
+    "Jooyoung Hahn"
+   ],
+   "title": "Spatial analysis of malignant-immune cell interactions in the tumor microenvironment using topological data analysis",
+   "venue": "npj Systems Biology and Applications",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "10.1038/s41540-026-00763-7",
+   "url": "",
+   "paper_key": "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
+   "evidence": "Re-verified 24 Sep 2026: doi.org 200 -> nature.com; page still uneditedManuscript=true, online 13 Jun 2026, citation_firstpage empty, no volume/article number in Crossref. Author order from publisher meta (Park, Gurnari, Dłotko, Kim, Hahn) differs from tex and from bioRxiv 10.1101/2025.03.27.645762."
+  },
+  {
+   "year": 2026,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Geonho Hwang",
+    "Yesom Park",
+    "Yueun Lee",
+    "Jooyoung Hahn",
+    "Myungjoo Kang"
+   ],
+   "title": "Localized Estimation of Condition Numbers for MILU Preconditioners on a Graph",
+   "venue": "SIAM Journal on Numerical Analysis",
+   "volume": "64",
+   "issue": "4",
+   "pages": "1443–1477",
+   "doi": "10.1137/24M1722134",
+   "url": "",
+   "paper_key": "Hwang2026_LocalizedEstimationConditionNumbersMILUGraph",
+   "evidence": "Re-verified: doi.org 403 to curl (SIAM), Crossref 200: 64(4) 1443-1477, online 30 Jul 2026, print Aug 2026, same 5 authors in same order. Tex said accepted, arXiv:2501.00245 (no journal-ref on arXiv)."
+  },
+  {
+   "year": 2025,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Nemanja Koljančić",
+    "Seol Ah Park",
+    "Davide Gurnari",
+    "Paweł Dłotko",
+    "Jooyoung Hahn",
+    "Ivan Špánik"
+   ],
+   "title": "Untargeted Chemical Profiling of Two-Dimensional Gas Chromatography Coupled with High-Resolution Mass Spectrometry Data for Botrytized Wines via Topological Data Analysis",
+   "venue": "Analytical Chemistry",
+   "volume": "97",
+   "issue": "46",
+   "pages": "25853–25867",
+   "doi": "10.1021/acs.analchem.5c05342",
+   "url": "",
+   "paper_key": "Koljancic2025_UntargetedChemicalProfilingTwoDimensiona",
+   "evidence": "Re-verified: doi.org 403 to curl (ACS), Crossref 200: 97(46) 25853-25867, online 14 Nov 2025; authors match Crossref and library .md."
+  },
+  {
+   "year": 2024,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Laplacian regularized eikonal equation with Soner boundary condition on polyhedral meshes",
+   "venue": "Computers & Mathematics with Applications",
+   "volume": "156",
+   "issue": "",
+   "pages": "74–86",
+   "doi": "10.1016/j.camwa.2023.12.016",
+   "url": "",
+   "paper_key": "Hahn2024_LaplacianRegularizedEikonalEquationSoner",
+   "evidence": "Re-verified: doi.org 200; Crossref vol 156, pp 74-86, Feb 2024; matches tex."
+  },
+  {
+   "year": 2024,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Yesom Park",
+    "Chang hoon Song",
+    "Jooyoung Hahn",
+    "Myungjoo Kang"
+   ],
+   "title": "ReSDF: Redistancing implicit surfaces using neural networks",
+   "venue": "Journal of Computational Physics",
+   "volume": "502",
+   "issue": "",
+   "pages": "112803",
+   "doi": "10.1016/j.jcp.2024.112803",
+   "url": "",
+   "paper_key": "Park2024_ReSDF",
+   "evidence": "Re-verified: doi.org 200; Crossref vol 502, article 112803, Apr 2024, no issue number (tex '502(1)' dropped). 'Chang hoon Song' spelled as in Crossref and published PDF."
+  },
+  {
+   "year": 2023,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Peter Priesching",
+    "Martin Balažovjech",
+    "Branislav Basara"
+   ],
+   "title": "Second-order accurate finite volume method for G-equation on polyhedral meshes",
+   "venue": "Japan Journal of Industrial and Applied Mathematics",
+   "volume": "40",
+   "issue": "2",
+   "pages": "1053–1082",
+   "doi": "10.1007/s13160-023-00574-x",
+   "url": "",
+   "paper_key": "Hahn2023_SecondOrderAccurateFiniteVolumeMethodGEq",
+   "evidence": "Re-verified: doi.org 200; Crossref 40(2) 1053-1082, online 28 Mar 2023."
+  },
+  {
+   "year": 2023,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Yesom Park",
+    "Taekyung Lee",
+    "Jooyoung Hahn",
+    "Myungjoo Kang"
+   ],
+   "title": "p-Poisson surface reconstruction in curl-free flow from point clouds",
+   "venue": "Advances in Neural Information Processing Systems (NeurIPS 2023)",
+   "volume": "36",
+   "issue": "",
+   "pages": "60077–60098",
+   "doi": "10.52202/075280-2626",
+   "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html",
+   "paper_key": "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow",
+   "evidence": "Re-verified: official NeurIPS bibtex (vol 36, pp 60077-60098, doi 10.52202/075280-2626); Crossref proceedings-article matches. The DOI resolves to the proceedings.com store page, so the NeurIPS url (HTTP 200) is the better reader link. Also arXiv:2310.20095.",
+   "link": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/bd18189308a4c45c7d71ca83acf3deaa-Abstract-Conference.html",
+   "link_label": "NeurIPS proceedings"
+  },
+  {
+   "year": 2022,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Finite volume method with the Soner boundary condition for computing the signed distance function on polyhedral meshes",
+   "venue": "International Journal for Numerical Methods in Engineering",
+   "volume": "123",
+   "issue": "4",
+   "pages": "1057–1077",
+   "doi": "10.1002/nme.6888",
+   "url": "",
+   "paper_key": "Hahn2022_FiniteVolumeMethodSonerBoundaryCondition",
+   "evidence": "Re-verified: doi.org 403 to curl (Wiley), Crossref 200: 123(4) 1057-1077, online 6 Dec 2021, issue 28 Feb 2022. Journal name 'for' (tex had 'of')."
+  },
+  {
+   "year": 2021,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Peter Frolkovič",
+    "Karol Mikula",
+    "Jooyoung Hahn",
+    "Dirk Martin",
+    "Branislav Basara"
+   ],
+   "title": "Flux balanced approximation with least-squares gradient for diffusion equation on polyhedral mesh",
+   "venue": "Discrete and Continuous Dynamical Systems - S",
+   "volume": "14",
+   "issue": "3",
+   "pages": "865–879",
+   "doi": "10.3934/dcdss.2020350",
+   "url": "",
+   "paper_key": "Frolkovic2021_FluxBalancedApproximationLeastSquaresGra",
+   "evidence": "Re-verified: doi.org 200; Crossref 14(3) 865-879, 2021; matches tex."
+  },
+  {
+   "year": 2020,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Martin Balažovjech",
+    "Branislav Basara"
+   ],
+   "title": "Cell-Centered Finite Volume Method for Regularized Mean Curvature Flow on Polyhedral Meshes",
+   "venue": "Finite Volumes for Complex Applications IX – Methods, Theoretical Aspects, Examples (FVCA 9, Bergen, 2020), Springer Proceedings in Mathematics & Statistics",
+   "volume": "323",
+   "issue": "",
+   "pages": "755–763",
+   "doi": "10.1007/978-3-030-43651-3_72",
+   "url": "",
+   "paper_key": "Hahn2020_CellCenteredFiniteVolumeMethodRegularize",
+   "evidence": "Re-verified: doi.org 200; Crossref book-chapter pp 755-763 (2020). PROMS vol 323 confirmed by web search (Amazon/AbeBooks listing 'Springer Proceedings in Mathematics & Statistics, 323'). Editors Klöfkorn, Keilegavlen, Radu, Fuhrmann (Crossref book record)."
+  },
+  {
+   "year": 2020,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Rafał Pyszczek",
+    "Jooyoung Hahn",
+    "Peter Priesching",
+    "Andrzej Teodorczyk"
+   ],
+   "title": "Numerical Modeling of Spark Ignition in Internal Combustion Engines",
+   "venue": "Journal of Energy Resources Technology",
+   "volume": "142",
+   "issue": "2",
+   "pages": "022202",
+   "doi": "10.1115/1.4044222",
+   "url": "",
+   "paper_key": "Pyszczek2020_NumericalModelingSparkIgnitionInternalCo",
+   "evidence": "Re-verified: doi.org 403 to curl (ASME), Crossref 200: 142(2), article 022202 (missing in tex), online 10 Oct 2019, issue Feb 2020."
+  },
+  {
+   "year": 2019,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Matej Medľa",
+    "Branislav Basara"
+   ],
+   "title": "Iterative inflow-implicit outflow-explicit finite volume scheme for level-set equations on polyhedron meshes",
+   "venue": "Computers & Mathematics with Applications",
+   "volume": "77",
+   "issue": "6",
+   "pages": "1639–1654",
+   "doi": "10.1016/j.camwa.2018.06.033",
+   "url": "",
+   "paper_key": "Hahn2019_IterativeInflowImplicitOutflowExplicitFi",
+   "evidence": "Re-verified: doi.org 200; Crossref 77(6) 1639-1654, Mar 2019. Crossref spells 'Medl’a' (ASCII rendering of the Slovak ľ); published PDF in library gives 'Medľa'."
+  },
+  {
+   "year": 2017,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Inflow-Based Gradient Finite Volume Method for a Propagation in a Normal Direction in a Polyhedron Mesh",
+   "venue": "Journal of Scientific Computing",
+   "volume": "72",
+   "issue": "1",
+   "pages": "442–465",
+   "doi": "10.1007/s10915-017-0364-4",
+   "url": "",
+   "paper_key": "Hahn2017_InflowGradientFiniteVolumeMethodPropagat",
+   "evidence": "Re-verified: doi.org 200; Crossref 72(1) 442-465, online 24 Jan 2017, issue Jul 2017."
+  },
+  {
+   "year": 2017,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Semi-implicit Level Set Method with Inflow-Based Gradient in a Polyhedron Mesh",
+   "venue": "Finite Volumes for Complex Applications VIII – Hyperbolic, Elliptic and Parabolic Problems (FVCA 8, Lille, 2017), Springer Proceedings in Mathematics & Statistics",
+   "volume": "200",
+   "issue": "",
+   "pages": "81–89",
+   "doi": "10.1007/978-3-319-57394-6_9",
+   "url": "",
+   "paper_key": "Hahn2017_SemiImplicitLevelSetMethodInflowBasedGradien",
+   "evidence": "Re-verified: doi.org 200; Crossref book-chapter pp 81-89 (2017). PROMS 'Book 200' confirmed by web search (Walmart/retail listing of the 'Hyperbolic, Elliptic and Parabolic Problems' volume). Editors Cancès, Omnes (Crossref book record)."
+  },
+  {
+   "year": 2014,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Michael Hintermüller",
+    "Carlos N. Rautenberg",
+    "Jooyoung Hahn"
+   ],
+   "title": "Functional-analytic and numerical issues in splitting methods for total variation-based image reconstruction",
+   "venue": "Inverse Problems",
+   "volume": "30",
+   "issue": "5",
+   "pages": "055014",
+   "doi": "10.1088/0266-5611/30/5/055014",
+   "url": "",
+   "paper_key": "Hintermuller2014_FunctionalAnalyticNumericalIssuesSplitti",
+   "evidence": "Re-verified: doi.org 200 (IOP); Crossref 30(5) 055014, May 2014. DOI was missing in tex."
+  },
+  {
+   "year": 2014,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Sung Ha Park",
+    "Chang-Ock Lee",
+    "Jooyoung Hahn"
+   ],
+   "title": "Image segmentation based on the statistical variational formulation using the local region information",
+   "venue": "Journal of the Korean Society for Industrial and Applied Mathematics",
+   "volume": "18",
+   "issue": "2",
+   "pages": "129–142",
+   "doi": "10.12941/jksiam.2014.18.129",
+   "url": "",
+   "paper_key": "Park2014_IMAGESEGMENTATIONSTATISTICALVARIATIONALF",
+   "evidence": "Re-verified: Crossref 18(2) 129-142; doi.org gives 302 to plain curl but 200 with a browser user agent (lands on koreascience JAKO201419553341745, whose citation_doi matches). Published title is all capitals, converted to sentence case. Journal name 'Korean Society' per KoreaScience (Crossref container-title says 'Korea Society'). DOI was missing in tex."
+  },
+  {
+   "year": 2013,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Yuping Duan",
+    "Yu Wang",
+    "Jooyoung Hahn"
+   ],
+   "title": "A Fast Augmented Lagrangian Method for Euler's Elastica Models",
+   "venue": "Numerical Mathematics: Theory, Methods and Applications",
+   "volume": "6",
+   "issue": "1",
+   "pages": "47–71",
+   "doi": "10.4208/nmtma.2013.mssvm03",
+   "url": "",
+   "paper_key": "Duan2013_FastAugmentedLagrangianMethodEulersElastica",
+   "evidence": "Re-verified: doi.org 200 (global-sci); Crossref 6(1) 47-71, 2013. DOI was missing in tex."
+  },
+  {
+   "year": 2013,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Jie Qiu",
+    "Eiji Sugisaki",
+    "Lei Jia",
+    "Xue-Cheng Tai",
+    "Hock Soon Seah"
+   ],
+   "title": "Stroke-Based Surface Reconstruction",
+   "venue": "Numerical Mathematics: Theory, Methods and Applications",
+   "volume": "6",
+   "issue": "1",
+   "pages": "297–324",
+   "doi": "10.4208/nmtma.2013.mssvm16",
+   "url": "",
+   "paper_key": "Hahn2013_StrokeBasedSurfaceReconstruction",
+   "evidence": "Re-verified: doi.org 200 (global-sci); Crossref 6(1) 297-324, 2013, 6 authors in same order. DOI was missing in tex."
+  },
+  {
+   "year": 2012,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chunlin Wu",
+    "Xue-Cheng Tai"
+   ],
+   "title": "Augmented Lagrangian Method for Generalized TV-Stokes Model",
+   "venue": "Journal of Scientific Computing",
+   "volume": "50",
+   "issue": "2",
+   "pages": "235–264",
+   "doi": "10.1007/s10915-011-9482-6",
+   "url": "",
+   "paper_key": "Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt",
+   "evidence": "Re-verified: doi.org 200; Crossref 50(2) 235-264, online 16 Apr 2011, issue Feb 2012. DOI was missing in tex."
+  },
+  {
+   "year": 2012,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Ginmo J. Chung",
+    "Yu Wang",
+    "Xue-Cheng Tai"
+   ],
+   "title": "Fast Algorithms for p-elastica Energy with the Application to Image Inpainting and Curve Reconstruction",
+   "venue": "Scale Space and Variational Methods in Computer Vision (SSVM 2011), Lecture Notes in Computer Science",
+   "volume": "6667",
+   "issue": "",
+   "pages": "169–182",
+   "doi": "10.1007/978-3-642-24785-9_15",
+   "url": "",
+   "paper_key": "Hahn2012_FastAlgorithmsPElasticaEnergyApplication",
+   "evidence": "Re-verified: doi.org 200; Crossref pp 169-182 (tex said 162-182), book issued 2012 (conference Ein-Gedi, May-Jun 2011). LNCS 6667 confirmed by web search (Amazon listing). Author names match library PDF ('Ginmo J. Chung')."
+  },
+  {
+   "year": 2012,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Yuping Duan",
+    "Yu Wang",
+    "Xue-Cheng Tai",
+    "Jooyoung Hahn"
+   ],
+   "title": "A Fast Augmented Lagrangian Method for Euler's Elastica Model",
+   "venue": "Scale Space and Variational Methods in Computer Vision (SSVM 2011), Lecture Notes in Computer Science",
+   "volume": "6667",
+   "issue": "",
+   "pages": "144–156",
+   "doi": "10.1007/978-3-642-24785-9_13",
+   "url": "",
+   "paper_key": "Duan2012_AFastAugmentedLagrangianMethodEulersElas",
+   "evidence": "Re-verified: doi.org 200; Crossref pp 144-156, book issued 2012 (conference 2011); LNCS 6667."
+  },
+  {
+   "year": 2011,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Xue-Cheng Tai",
+    "Jooyoung Hahn",
+    "Ginmo Jason Chung"
+   ],
+   "title": "A Fast Algorithm for Euler's Elastica Model Using Augmented Lagrangian Method",
+   "venue": "SIAM Journal on Imaging Sciences",
+   "volume": "4",
+   "issue": "1",
+   "pages": "313–344",
+   "doi": "10.1137/100803730",
+   "url": "",
+   "paper_key": "Tai2011_AFastAlgorithmEulerSElasticaModelAugment",
+   "evidence": "Re-verified: doi.org 403 to curl (SIAM), Crossref 200: 4(1) 313-344, 2011; matches tex and library PDF."
+  },
+  {
+   "year": 2011,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Xue-Cheng Tai",
+    "Sofia Borok",
+    "Alfred Marcel Bruckstein"
+   ],
+   "title": "Orientation-Matching Minimization for Image Denoising and Inpainting",
+   "venue": "International Journal of Computer Vision",
+   "volume": "92",
+   "issue": "3",
+   "pages": "308–324",
+   "doi": "10.1007/s11263-010-0371-5",
+   "url": "",
+   "paper_key": "Hahn2011_OrientationMatchingMinimizationImageDeno",
+   "evidence": "Re-verified: doi.org 200; Crossref 92(3) 308-324 (online 16 Jul 2010, issue May 2011). Published title differs from tex title; library PDF confirms published title and 'Alfred Marcel Bruckstein'. DOI was missing in tex."
+  },
+  {
+   "year": 2010,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "Geometric attraction-driven flow for image segmentation and boundary detection",
+   "venue": "Journal of Visual Communication and Image Representation",
+   "volume": "21",
+   "issue": "1",
+   "pages": "56–66",
+   "doi": "10.1016/j.jvcir.2009.10.005",
+   "url": "",
+   "paper_key": "Hahn2010_GeometricAttractionDrivenFlowImageSegmen",
+   "evidence": "Re-verified: doi.org 200; Crossref 21(1) 56-66, Jan 2010. DOI was missing in tex."
+  },
+  {
+   "year": 2009,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "A Nonlinear Structure Tensor with the Diffusivity Matrix Composed of the Image Gradient",
+   "venue": "Journal of Mathematical Imaging and Vision",
+   "volume": "34",
+   "issue": "2",
+   "pages": "137–151",
+   "doi": "10.1007/s10851-009-0138-1",
+   "url": "",
+   "paper_key": "Hahn2009_ANonlinearStructureTensorDiffusivityMatr",
+   "evidence": "Re-verified: doi.org 200; Crossref 34(2) 137-151, 2009 (published title differs slightly from tex wording). DOI was missing in tex; tex misspells first author as 'Jooyuong' (corrected here)."
+  },
+  {
+   "year": 2009,
+   "type": "proceedings",
+   "status": "published",
+   "authors": [
+    "Xue-Cheng Tai",
+    "Sofia Borok",
+    "Jooyoung Hahn"
+   ],
+   "title": "Image Denoising Using TV-Stokes Equation with an Orientation-Matching Minimization",
+   "venue": "Scale Space and Variational Methods in Computer Vision (SSVM 2009), Lecture Notes in Computer Science",
+   "volume": "5567",
+   "issue": "",
+   "pages": "490–501",
+   "doi": "10.1007/978-3-642-02256-2_41",
+   "url": "",
+   "paper_key": "Tai2009_ImageDenoisingTVStokesEquationOrientationMat",
+   "evidence": "Re-verified: doi.org 200; Crossref pp 490-501 (pages missing in tex), 2009. LNCS 5567 confirmed by web search (Amazon listing). Editors Tai, Mørken, Lysaker, Lie."
+  },
+  {
+   "year": 2008,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Min Jeong Kwon",
+    "Jooyoung Hahn",
+    "HyunWook Park"
+   ],
+   "title": "A fast spherical inflation method of the cerebral cortex by deformation of a simplex mesh on the polar coordinates",
+   "venue": "International Journal of Imaging Systems and Technology",
+   "volume": "18",
+   "issue": "1",
+   "pages": "9–16",
+   "doi": "10.1002/ima.20140",
+   "url": "",
+   "paper_key": "Kwon2008_AFastSphericalInflationMethodCerebralCor",
+   "evidence": "Re-verified: doi.org 403 to curl (Wiley), Crossref 200: 18(1) 9-16, 2008. DOI was missing in tex."
+  },
+  {
+   "year": 2007,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Chang-Ock Lee",
+    "Kiwan Jeon",
+    "Youngsoo Ha",
+    "Jooyoung Hahn"
+   ],
+   "title": "A variational approach to blending based on warping for non-overlapped images",
+   "venue": "Computer Vision and Image Understanding",
+   "volume": "105",
+   "issue": "2",
+   "pages": "112–120",
+   "doi": "10.1016/j.cviu.2006.09.001",
+   "url": "",
+   "paper_key": "Lee2007_AVariationalApproachBlendingWarpingNonOv",
+   "evidence": "Re-verified: doi.org 200; Crossref 105(2) 112-120, Feb 2007. DOI was missing in tex."
+  },
+  {
+   "year": 2007,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "Fine segmentation using geometric attraction-driven flow and edge-regions",
+   "venue": "Journal of the Korean Society for Industrial and Applied Mathematics",
+   "volume": "11",
+   "issue": "2",
+   "pages": "41–47",
+   "doi": "",
+   "url": "https://koreascience.kr/article/JAKO200701436741624.page",
+   "paper_key": "",
+   "evidence": "No DOI: Crossref has no record (its JKSIAM records start in 2012) and the KoreaScience citation_doi is empty. KoreaScience meta re-verified: vol 11 no 2, pp 41-47 (tex said 41-48), 2007, authors Hahn, Lee. Not in the PAPERS_HAHN library."
+  },
+  {
+   "year": 2006,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Suk-ho Lee",
+    "Jin Keun Seo",
+    "Chunjae Park",
+    "Byung Il Lee",
+    "Eung Je Woo",
+    "Soo Yeol Lee",
+    "Ohin Kwon",
+    "Jooyoung Hahn"
+   ],
+   "title": "Conductivity Image Reconstruction From Defective Data in MREIT: Numerical Simulation and Animal Experiment",
+   "venue": "IEEE Transactions on Medical Imaging",
+   "volume": "25",
+   "issue": "2",
+   "pages": "168–176",
+   "doi": "10.1109/TMI.2005.862150",
+   "url": "",
+   "paper_key": "SukhoLee2006_ConductivityImageReconstructionDefective",
+   "evidence": "Re-verified: doi.org resolves to IEEE Xplore document 1583763; Crossref 25(2) 168-176, Feb 2006, 8 authors in same order (last listed as 'J. Hahn'). Title capitalization from the published PDF in the library. DOI was missing in tex."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Yesom Park",
+    "Imseong Park",
+    "Jooyoung Hahn",
+    "Myungjoo Kang"
+   ],
+   "title": "Neural Shortest Path for Surface Reconstruction from Point Clouds",
+   "venue": "arXiv:2502.06047",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://arxiv.org/abs/2502.06047",
+   "paper_key": "",
+   "evidence": "Re-verified: arXiv abs page, only v1 (9 Feb 2025), no journal-ref or DOI; Crossref title search finds no published version. Tex: under review at International Journal of Computer Vision. Not in PAPERS_HAHN."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Yesom Park",
+    "Jooyoung Hahn"
+   ],
+   "title": "Deep Learning with Viscosity-Reduction Variational Approach for Anisotropic Eikonal Equations",
+   "venue": "SSRN",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "10.2139/ssrn.5361725",
+   "url": "",
+   "paper_key": "",
+   "evidence": "Re-verified: Crossref posted-content 10.2139/ssrn.5361725 (created 22 Jul 2025), the later of two SSRN postings (the other is 10.2139/ssrn.5252237, 13 May 2025, the one cited in commented-out tex). doi.org resolves to ssrn.com (403 to curl). No published version in Crossref. Tex: under review at Journal of Computational Physics. Not in PAPERS_HAHN."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Eikonal boundary condition for level set method",
+   "venue": "arXiv:2504.05845",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://arxiv.org/abs/2504.05845",
+   "paper_key": "",
+   "evidence": "Re-verified: arXiv abs page (v1 8 Apr 2025, v2 14 Aug 2026), no journal-ref or DOI; earlier SSRN posting 10.2139/ssrn.4712362 (Jan 2024). No published version in Crossref. Tex: under review at Japan Journal of Industrial and Applied Mathematics. Not in PAPERS_HAHN."
+  },
+  {
+   "year": 2025,
+   "type": "submitted",
+   "status": "under review",
+   "authors": [
+    "Eunsuh Kim",
+    "Dongjun Lee",
+    "Heechang Kim",
+    "Jooyoung Hahn",
+    "Minseok Choi"
+   ],
+   "title": "Neural Augmented Lagrangian Method for Approximating Viscosity Solution of the Eikonal Equation",
+   "venue": "Journal of Computational Physics",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "",
+   "url": "",
+   "paper_key": "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
+   "evidence": "PAPERS_HAHN holds revision R1 (JCOMP-D-25-02459R1); publication_Hahn.tex lists it as under review at JCP; no public preprint (checked 2026-09-24).",
+   "hidden": true,
+   "hidden_note": "removed from the site for now (2026-09-24); under review, no public preprint"
+  },
+  {
+   "year": 2024,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Eikonal boundary condition for level set method",
+   "venue": "ALGORITMY 2024, Conference on Scientific Computing",
+   "place": "Podbanské, Slovakia",
+   "date": "Mar 2024",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2023,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Regularized eikonal equation on polyhedral meshes",
+   "venue": "ICIAM 2023, International Congress on Industrial and Applied Mathematics",
+   "place": "Tokyo, Japan",
+   "date": "Aug 2023",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2022,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn"
+   ],
+   "title": "Finite volume method for level set equations on polyhedral meshes",
+   "venue": "Discrete Duality Finite Volume Method and Applications, Jean-Morlet Chair Workshop, CIRM",
+   "place": "Marseille, France",
+   "date": "Oct 2022",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2022,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Finite volume method for regularized eikonal equation with Soner boundary condition on polyhedral meshes",
+   "venue": "ACOMEN 2022, 8th International Conference on Advanced Computational Methods in Engineering",
+   "place": "Liège, Belgium",
+   "date": "Aug 2022",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2022,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Time-dependent eikonal equation with Soner boundary condition",
+   "venue": "HYP2022, XVIII International Conference on Hyperbolic Problems: Theory, Numerics, Applications",
+   "place": "Málaga, Spain",
+   "date": "Jun 2022",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2019,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Matej Medľa",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Industrial mathematics for G-equation in premixed turbulent combustion",
+   "venue": "ICIAM 2019, International Congress on Industrial and Applied Mathematics",
+   "place": "Valencia, Spain",
+   "date": "Jul 2019",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2018,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Matej Medľa",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Industrial methods for G-equation combustion model in a 3D polyhedron mesh",
+   "venue": "13th World Congress on Computational Mechanics (WCCM XIII)",
+   "place": "New York, USA",
+   "date": "Jul 2018",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2018,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Matej Medľa",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Semi-implicit level set method for advective and normal flow on polyhedron meshes",
+   "venue": "6th European Conference on Computational Mechanics / 7th European Conference on Computational Fluid Dynamics",
+   "place": "Glasgow, UK",
+   "date": "Jun 2018",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2017,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Semi-implicit method with inflow-based gradient for the G-equation model on a polyhedron mesh",
+   "venue": "ACOMEN 2017, 7th International Conference on Advanced Computational Methods in Engineering",
+   "place": "Ghent, Belgium",
+   "date": "Sep 2017",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2017,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Semi-implicit method with inflow-based gradient for the level set equations on a polyhedron mesh",
+   "venue": "Equadiff 2017",
+   "place": "Bratislava, Slovakia",
+   "date": "Jul 2017",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2017,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Inflow-based finite volume method for level set equations in a polyhedron mesh",
+   "venue": "88th Annual Meeting of the International Association of Applied Mathematics and Mechanics (GAMM)",
+   "place": "Weimar, Germany",
+   "date": "Mar 2017",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2016,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn"
+   ],
+   "title": "Inflow-based gradient finite volume method for level set method in the premixed combustion",
+   "venue": "36th International Symposium on Combustion",
+   "place": "Seoul, Korea",
+   "date": "Jul 2016",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2016,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič",
+    "Branislav Basara"
+   ],
+   "title": "Inflow-based gradient finite volume method for level set equation",
+   "venue": "SIAM Conference on Imaging Science (IS16)",
+   "place": "Albuquerque, USA",
+   "date": "May 2016",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2016,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "An extension of Rouy-Tourin scheme into a polyhedron mesh",
+   "venue": "ALGORITMY 2016, Conference on Scientific Computing",
+   "place": "Podbanské, Slovakia",
+   "date": "Mar 2016",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2015,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn"
+   ],
+   "title": "Regularized flux-based gradient for level set methods",
+   "venue": "15th International Conference on Numerical Combustion",
+   "place": "Avignon, France",
+   "date": "Apr 2015",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2012,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Xue-Cheng Tai",
+    "Jason Ginmo Chung"
+   ],
+   "title": "Numerical algorithms for Euler's elastica models in image processing",
+   "venue": "SIAM Conference on Imaging Science (IS12)",
+   "place": "Philadelphia, USA",
+   "date": "May 2012",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2012,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Carlos N. Rautenberg",
+    "Michael Hintermüller"
+   ],
+   "title": "Accurate numerical schemes in image denoising",
+   "venue": "SIAM Conference on Imaging Science (IS12)",
+   "place": "Philadelphia, USA",
+   "date": "May 2012",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2011,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Xue-Cheng Tai",
+    "Ginmo Chung"
+   ],
+   "title": "A fast algorithm for Euler's elastica model using augmented Lagrangian method",
+   "venue": "ICIAM 2011, International Congress on Industrial and Applied Mathematics",
+   "place": "Vancouver, Canada",
+   "date": "Jul 2011",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2010,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Sofia Borok",
+    "Xue-Cheng Tai",
+    "Alfred M. Bruckstein"
+   ],
+   "title": "On orientation-matching minimization TV-Stokes equation: image denoising and image inpainting",
+   "venue": "IMI Workshop on Computational Aesthetics and Photography",
+   "place": "Singapore",
+   "date": "Dec 2010",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2010,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Xue-Cheng Tai"
+   ],
+   "title": "Surface reconstruction and shading from sparse gradient fields based on vector inpainting",
+   "venue": "SIAM Conference on Imaging Science (IS10)",
+   "place": "Chicago, USA",
+   "date": "Apr 2010",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2008,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "A nonlinear structure tensor with diffusivity matrix composed of image gradient",
+   "venue": "SIAM Conference on Imaging Science (IS08)",
+   "place": "San Diego, USA",
+   "date": "Jul 2008",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2007,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "Geometric attraction-driven flow for image segmentation and boundary detection",
+   "venue": "KSIAM 2007 Annual Meeting",
+   "place": "Hoengseong, Korea",
+   "date": "Nov 2007",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2007,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Min Jeong Kwon",
+    "Jooyoung Hahn",
+    "HyunWook Park"
+   ],
+   "title": "A robust spherical inflation technique using the method of concentric rings",
+   "venue": "Joint Annual Meeting ISMRM-ESMRMB",
+   "place": "Berlin, Germany",
+   "date": "May 2007",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2007,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "Fine segmentation using geometric attraction-driven flow and edge-regions",
+   "venue": "KSIAM 2007 Spring Conference",
+   "place": "KAIST, Daejeon, Korea",
+   "date": "May 2007",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences",
+   "note": "KSIAM Young Researcher Award"
+  },
+  {
+   "year": 2007,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Chang-Ock Lee",
+    "Jooyoung Hahn"
+   ],
+   "title": "Nonlinear structure tensor using diffusion coefficients based on image",
+   "venue": "KSIAM 2007 Spring Conference",
+   "place": "KAIST, Daejeon, Korea",
+   "date": "May 2007",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2006,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Chang-Ock Lee"
+   ],
+   "title": "Highly accurate segmentation using geometric attraction-driven flow in edge-regions",
+   "venue": "SIAM Conference on Imaging Science (IS06)",
+   "place": "Minneapolis, USA",
+   "date": "May 2006",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2005,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Chang-Ock Lee",
+    "Kiwan Jeon",
+    "Youngsoo Ha",
+    "Jooyoung Hahn"
+   ],
+   "title": "A variational approach to blending based on warping for non-overlapped images",
+   "venue": "3rd Chinese-Korean Joint Workshop on Recent Advances in Numerical Analysis and Its Applications",
+   "place": "Seogwipo, Jeju, Korea",
+   "date": "Feb 2005",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2005,
+   "type": "presentation",
+   "status": "presented",
+   "authors": [
+    "Jooyoung Hahn",
+    "Kiwan Jeon",
+    "Chang-Ock Lee",
+    "Kilsu Park"
+   ],
+   "title": "Segmentation and background extraction with application to e-catalogue",
+   "venue": "KSIAM 2005 Spring Conference",
+   "place": "Seoul National University, Seoul, Korea",
+   "date": "May 2005",
+   "doi": "",
+   "url": "",
+   "paper_key": "",
+   "evidence": "publication_Hahn.tex, section Conferences"
+  },
+  {
+   "year": 2021,
+   "type": "patent",
+   "status": "published",
+   "authors": [
+    "Seungjun Jeon",
+    "Jun Beum Kim",
+    "Jooyoung Hahn",
+    "Seong Weon Jeong"
+   ],
+   "title": "Real-time fine dust monitoring system and its methods",
+   "venue": "KR20210050831A",
+   "doi": "",
+   "url": "https://patents.google.com/patent/KR20210050831A/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
+   "year": 2017,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Jie Qiu",
+    "Jooyoung Hahn",
+    "Eiji Sugisaki",
+    "Lei Jia",
+    "Xue-Cheng Tai",
+    "Hock Soon Seah"
+   ],
+   "title": "A method for reconstructing a 3D surface from a 2D sketch",
+   "venue": "CN103460252B",
+   "doi": "",
+   "url": "https://patents.google.com/patent/CN103460252B/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
+   "year": 2013,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Xue-Cheng Tai",
+    "Jooyoung Hahn",
+    "Jason Ginmo Chung"
+   ],
+   "title": "Methods and systems for generating enhanced images using Euler's elastica model",
+   "venue": "US8447135B2",
+   "doi": "",
+   "url": "https://patents.google.com/patent/US8447135B2/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
+   "year": 2012,
+   "type": "patent",
+   "status": "published",
+   "authors": [
+    "Jie Qiu",
+    "Jooyoung Hahn",
+    "Eiji Sugisaki",
+    "Lei Jia",
+    "Xue-Cheng Tai",
+    "Hock Soon Seah"
+   ],
+   "title": "A method for reconstructing a 3D surface from a 2D sketch",
+   "venue": "WO2012118439A1",
+   "doi": "",
+   "url": "https://patents.google.com/patent/WO2012118439A1/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
+   "year": 2009,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Chang-Ock Lee",
+    "Sung Ha Park",
+    "Jooyoung Hahn"
+   ],
+   "title": "Method for image segmentation using statistically reinstating force and multi-resolution",
+   "venue": "KR100925180B1",
+   "doi": "",
+   "url": "https://patents.google.com/patent/KR100925180B1/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  }
+ ],
+ "conference_note": "Entries with a DOI or link are peer-reviewed proceedings papers; the others are conference presentations."
+}

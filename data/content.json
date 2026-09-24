@@ -1,0 +1,404 @@
+{
+ "profile": {
+  "name": "Jooyoung Hahn",
+  "title": "Assistant Professor, Applied Mathematics",
+  "affiliation": [
+   "Department of Software Engineering",
+   "Faculty of Nuclear Sciences and Physical Engineering",
+   "Czech Technical University in Prague"
+  ],
+  "email_user": "jooyoung.hahn",
+  "email_domain": "fjfi.cvut.cz",
+  "email_noscript_fallback": false,
+  "profiles": [
+   {
+    "label": "Google Scholar",
+    "href": "https://scholar.google.com/citations?user=4w2vNhcAAAAJ&hl=en"
+   },
+   {
+    "label": "ORCID",
+    "href": "https://orcid.org/0000-0003-4357-1009"
+   },
+   {
+    "label": "Scopus",
+    "href": "https://www.scopus.com/authid/detail.uri?authorId=58090037100"
+   },
+   {
+    "label": "Web of Science",
+    "href": "https://www.webofscience.com/wos/author/record/AGX-8714-2022"
+   },
+   {
+    "label": "ResearchGate",
+    "href": "https://www.researchgate.net/profile/Jooyoung-Hahn"
+   },
+   {
+    "label": "LinkedIn",
+    "href": "https://www.linkedin.com/in/jooyoung-hahn-252b5233/"
+   }
+  ],
+  "group": "Geometry-informed Data Analysis Group"
+ },
+ "intro": "Jooyoung Hahn is an Assistant Professor of Applied Mathematics at the Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague. His main work is on finite-volume schemes for partial differential equations on general 3-D polyhedral meshes, in particular level-set equations, eikonal equations. He also works on geometry-informed topological data analysis applied to biomedical and chemical data, and on neural-network solvers for PDEs; his earlier research was on variational and PDE-based image processing and surface reconstruction. He received his PhD at KAIST and held postdoctoral positions at NTU Singapore and the University of Graz, then spent almost 10 years at AVL in Graz as a numerical-methods developer for industrial CFD and combustion, and was a SASPRO2 Marie Skłodowska-Curie Fellow in Bratislava from 2022 to 2025.",
+ "categories": [
+  {
+   "id": "fvm",
+   "name": "Finite-volume methods for PDEs",
+   "blurb": "Cell-centered finite-volume methods on 3-D polyhedral meshes for level-set, eikonal, mean-curvature-flow and diffusion equations, with applications to engine combustion, and condition-number bounds for MILU preconditioners.",
+   "hero": {
+    "src": "assets/heroes/fvm.jpg",
+    "caption": "G-equation flame surface (red) inside the polyhedral mesh of an engine combustion chamber.",
+    "provenance": "Hahn2023 JJIAM Fig. 7 (figures_common/GDI_OP1_CA_725.jpg)"
+   },
+   "papers": [
+    "Hwang2026_LocalizedEstimationConditionNumbersMILUGraph",
+    "Hahn2024_LaplacianRegularizedEikonalEquationSoner",
+    "Hahn2023_SecondOrderAccurateFiniteVolumeMethodGEq",
+    "Hahn2022_FiniteVolumeMethodSonerBoundaryCondition",
+    "Frolkovic2021_FluxBalancedApproximationLeastSquaresGra",
+    "Hahn2020_CellCenteredFiniteVolumeMethodRegularize",
+    "Pyszczek2020_NumericalModelingSparkIgnitionInternalCo",
+    "Hahn2019_IterativeInflowImplicitOutflowExplicitFi",
+    "Hahn2017_InflowGradientFiniteVolumeMethodPropagat",
+    "Hahn2017_SemiImplicitLevelSetMethodInflowBasedGradien"
+   ]
+  },
+  {
+   "id": "tda",
+   "name": "Geometry-informed topological data analysis",
+   "blurb": "Ball Mapper, persistent homology and signed distance functions applied to cell positions in tumor tissue and to mass-spectrometry data of wines.",
+   "hero": {
+    "src": "assets/heroes/tda.jpg",
+    "caption": "GC×GC chromatogram of a wine and its Ball Mapper graphs at three scales.",
+    "provenance": "Koljancic2025 Anal. Chem. Fig. 6"
+   },
+   "papers": [
+    "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
+    "Koljancic2025_UntargetedChemicalProfilingTwoDimensiona"
+   ]
+  },
+  {
+   "id": "neural",
+   "name": "Neural-network solvers for PDEs",
+   "blurb": "Implicit neural representations that solve the eikonal and p-Poisson equations: redistancing of level-set functions, viscosity solutions in domains with obstacles, and surface reconstruction from point clouds.",
+   "hero": {
+    "src": "assets/heroes/neural.jpg",
+    "caption": "Cut-open level sets of 3-D signed distance functions computed by a neural network (ReSDF).",
+    "provenance": "Park2024 ReSDF, J. Comput. Phys. 502 (2024), 3-D results figure"
+   },
+   "papers": [
+    "Han2026_AStochasticVanishingViscosityApproachEik",
+    "Park2024_ReSDF",
+    "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow"
+   ]
+  },
+  {
+   "id": "image",
+   "name": "Variational and PDE-based image processing",
+   "blurb": "Variational models and PDEs for image denoising, inpainting, segmentation and blending: TV-Stokes models, augmented Lagrangian methods for total variation and Euler's elastica, nonlinear structure tensors and level-set active contours.",
+   "hero": {
+    "src": "assets/heroes/image.jpg",
+    "caption": "Euler's elastica: inpainting of the red regions (top) and removal of salt-and-pepper noise (bottom).",
+    "provenance": "Tai, Hahn, Chung 2011, SIAM J. Imaging Sci. 4, Figs. 6(b) and 11(a)"
+   },
+   "papers": [
+    "Hintermuller2014_FunctionalAnalyticNumericalIssuesSplitti",
+    "Park2014_IMAGESEGMENTATIONSTATISTICALVARIATIONALF",
+    "Duan2013_FastAugmentedLagrangianMethodEulersElastica",
+    "Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt",
+    "Hahn2012_FastAlgorithmsPElasticaEnergyApplication",
+    "Duan2012_AFastAugmentedLagrangianMethodEulersElas",
+    "Hahn2011_OrientationMatchingMinimizationImageDeno",
+    "Tai2011_AFastAlgorithmEulerSElasticaModelAugment",
+    "Hahn2010_GeometricAttractionDrivenFlowImageSegmen",
+    "Hahn2009_ANonlinearStructureTensorDiffusivityMatr",
+    "Tai2009_ImageDenoisingTVStokesEquationOrientationMat",
+    "Lee2007_AVariationalApproachBlendingWarpingNonOv",
+    "SukhoLee2006_ConductivityImageReconstructionDefective"
+   ]
+  },
+  {
+   "id": "surface",
+   "name": "Surface reconstruction",
+   "blurb": "Reconstruction of surfaces and curves from sketch strokes, sparse gradients and noisy point clouds, and spherical inflation of the cerebral cortex.",
+   "hero": {
+    "src": "assets/heroes/surface.jpg",
+    "caption": "A line drawing and the 3-D surface reconstructed from it.",
+    "provenance": "Hahn2012 J. Sci. Comput. Fig. 7"
+   },
+   "papers": [
+    "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow",
+    "Hahn2013_StrokeBasedSurfaceReconstruction",
+    "Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt",
+    "Kwon2008_AFastSphericalInflationMethodCerebralCor"
+   ]
+  }
+ ],
+ "papers": {
+  "Hahn2017_InflowGradientFiniteVolumeMethodPropagat": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2017_InflowGradientFiniteVolumeMethodPropagat.jpg",
+   "wiki_uid": "wfe693fbe1b14",
+   "figure_file": "1083ae2d-2f9a-41f4-8f35-074c7f2a1e7f-17_932_1001_187_263.jpg",
+   "caption": "Nested level-set isosurfaces propagating from a sphere inside a cubic domain.",
+   "synopsis": "Solves propagation in the normal direction (a level-set equation) on 3-D polyhedron meshes with a cell-centered finite volume scheme based on an inflow-based gradient over 1-ring face neighbors."
+  },
+  "Hahn2017_SemiImplicitLevelSetMethodInflowBasedGradien": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2017_SemiImplicitLevelSetMethodInflowBasedGradien.jpg",
+   "wiki_uid": "w15a35d42c07e",
+   "figure_file": "6c9c99a7-e447-4061-849f-49e6b23a5421-6_268_901_191_310.jpg",
+   "caption": "Cut-away polyhedral meshes of a box and a cylinder test domain.",
+   "synopsis": "Solves normal-direction level-set propagation on 3-D polyhedron meshes with a semi-implicit finite volume scheme that treats inflow implicitly, relaxing the CFL time-step restriction of small cells."
+  },
+  "Hahn2019_IterativeInflowImplicitOutflowExplicitFi": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2019_IterativeInflowImplicitOutflowExplicitFi.jpg",
+   "wiki_uid": "w8838165bfab3",
+   "figure_file": "d5716908-379a-44e7-ac88-dd4e8d6ff60b-08_332_858_1073_521.jpg",
+   "caption": "Zero level sets of a rotating sphere and a rotating cube.",
+   "synopsis": "Solves advective and normal-flow level-set equations on polyhedron meshes with an iterative inflow-implicit outflow-explicit finite volume scheme, second-order in space and time, using 1-ring face neighbors only."
+  },
+  "Hahn2020_CellCenteredFiniteVolumeMethodRegularize": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2020_CellCenteredFiniteVolumeMethodRegularize.jpg",
+   "wiki_uid": "w5d3e935046d5",
+   "figure_file": "68fc0e69-d6dc-4e31-9c75-80da942bf672-6_399_904_1548_307.jpg",
+   "caption": "Half-cut polyhedral mesh of a complex-shape domain with a cone and a bent pipe.",
+   "synopsis": "Solves regularized mean curvature flow in level-set form on 3-D polyhedral meshes with a cell-centered finite volume method and nonlinear Crank-Nicolson time stepping, second-order in space and time."
+  },
+  "Frolkovic2021_FluxBalancedApproximationLeastSquaresGra": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Frolkovic2021_FluxBalancedApproximationLeastSquaresGra.jpg",
+   "wiki_uid": "w93b9ee4d4108",
+   "figure_file": "4db29fbc-85ca-4070-a5d2-6bc586618456-12_486_1230_1087_451.jpg",
+   "caption": "Isosurfaces of a Laplace solution between a cone and a bent pipe in a box.",
+   "synopsis": "Solves diffusion equations with possibly discontinuous coefficients on polyhedral meshes by a cell-centered finite volume method with a flux-balanced approximation of the face flux and a least-squares gradient."
+  },
+  "Hahn2022_FiniteVolumeMethodSonerBoundaryCondition": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2022_FiniteVolumeMethodSonerBoundaryCondition.jpg",
+   "wiki_uid": "w349036000bac",
+   "figure_file": "f28b741c-29cf-4118-b9ab-8d11d003b8ce-09_956_1415_1428_324.jpg",
+   "caption": "Signed distance contours around a hole on a slice of a nonconvex domain.",
+   "synopsis": "Computes the signed distance function to a surface on 3-D polyhedral meshes by a cell-centered finite volume method for the time-relaxed eikonal equation with the Soner boundary condition."
+  },
+  "Hahn2023_SecondOrderAccurateFiniteVolumeMethodGEq": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2023_SecondOrderAccurateFiniteVolumeMethodGEq.jpg",
+   "wiki_uid": "w8eaa02216426",
+   "figure_file": "a47ab916-daed-489c-8977-a11ab0452a7e-22_1745_1170_191_177.jpg",
+   "caption": "Stanford Dragon surface under regularized mean curvature flow at four times on a polyhedral mesh.",
+   "synopsis": "Solves the G-equation (advective, normal and mean curvature flow) on 3-D polyhedral meshes with a second-order finite volume method, applied to premixed combustion in a gasoline direct-injection engine."
+  },
+  "Hahn2024_LaplacianRegularizedEikonalEquationSoner": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2024_LaplacianRegularizedEikonalEquationSoner.jpg",
+   "wiki_uid": "wf3c0800f827d",
+   "figure_file": "30b5a508-5f2c-413f-914e-f840084c44ed-11_1753_1165_734_451.jpg",
+   "caption": "Equidistant isosurfaces of the distance function around the Stanford Dragon surface.",
+   "synopsis": "Computes distance functions on 3-D polyhedral meshes from a Laplacian-regularized eikonal equation with the Soner boundary condition, solved by a cell-centered finite volume method with decreasing regularization."
+  },
+  "Pyszczek2020_NumericalModelingSparkIgnitionInternalCo": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Pyszczek2020_NumericalModelingSparkIgnitionInternalCo.jpg",
+   "wiki_uid": "w0d7f19ab49f9",
+   "figure_file": "49f0b9ac-cddf-4fee-b8bc-ddfa77e33e8a-2_794_801_122_1069.jpg",
+   "caption": "Spark channel represented by particles, stretched by gas flow between spark-plug electrodes.",
+   "synopsis": "Models spark ignition for 3-D CFD of spark-ignited engines by coupling spark-channel, electrical-circuit, heat-diffusion and ignition-delay submodels; the flame kernel then propagates by the G-equation."
+  },
+  "Hwang2026_LocalizedEstimationConditionNumbersMILUGraph": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hwang2026_LocalizedEstimationConditionNumbersMILUGraph.jpg",
+   "wiki_uid": "wd272e48cdba5",
+   "figure_file": "9335f749-bae6-4c5a-8cb3-f54d5ac7365f-15_391_1063_324_354.jpg",
+   "caption": "Quadtree cells with precursor and successor neighbors of a cell C in the MILU ordering.",
+   "synopsis": "Defines MILU preconditioners on weighted graphs and bounds their condition number by a per-vertex local estimator, giving O(h⁻¹) bounds for wide-stencil finite differences and quadtree/octree grids."
+  },
+  "Park2024_ReSDF": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Park2024_ReSDF.jpg",
+   "wiki_uid": "wc0ce61bb5665",
+   "figure_file": "dd26ae61-c39b-435b-bb59-4b215c91d0af-02_466_1160_165_364.jpg",
+   "caption": "Star-shaped interface: level set function before and signed distance function after redistancing.",
+   "synopsis": "Recovers the signed distance function from a given level-set function with a neural network that outputs the distance and its unit gradient, trained with geometry-based losses."
+  },
+  "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Park2023_PPoissonSurfaceReconstructionCurlFreeFlow.jpg",
+   "wiki_uid": "w0089b4d4e489",
+   "figure_file": "b9fc9f12-3fd0-4e54-8729-9d1a101bdc56-08_402_566_1637_1108.jpg",
+   "caption": "Gargoyle surface reconstructed from a point cloud with the curl-free constraint.",
+   "synopsis": "Reconstructs a signed distance function and surface from a raw, unoriented point cloud with an implicit neural representation constrained by the p-Poisson equation and a curl-free condition."
+  },
+  "Han2026_AStochasticVanishingViscosityApproachEik": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Han2026_AStochasticVanishingViscosityApproachEik.jpg",
+   "wiki_uid": "w694d28896585",
+   "figure_file": "fd432c94-7907-48f0-8771-4f67e7d14920-15_525_1206_183_340.jpg",
+   "caption": "Predicted eikonal solution from a circular source detouring around a rectangular obstacle.",
+   "synopsis": "Solves the eikonal equation with a meshless neural network trained on a stochastic (Feynman-Kac) form of the vanishing viscosity limit, including domains with internal obstacles."
+  },
+  "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution": {
+   "include": false,
+   "wiki_uid": "w91cff03ff217",
+   "figure_file": "3fab3c3c-793c-42a7-9c61-00210f608a9a-40_1087_1062_379_505.jpg",
+   "caption": "Distance field around two rectangular holes with a shortest path to circular source.",
+   "synopsis": "Approximates the eikonal viscosity solution with a neural network by maximizing the volume under its graph subject to a 1-Lipschitz constraint, enforced by an augmented Lagrangian method.",
+   "figure_note": "no figure until the paper is public (manuscript under review)"
+  },
+  "Park2026_SpatialAnalysisMalignantImmuneCellInteractio": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Park2026_SpatialAnalysisMalignantImmuneCellInteractio.jpg",
+   "wiki_uid": "wb2e7fdb5d2b0",
+   "figure_file": "ac6dc02b-2efd-4f00-8bd6-0b631649c2be-08_1095_1561_178_258.jpg",
+   "caption": "Topological malignant region of a cell point cloud and signed distance to its boundary.",
+   "synopsis": "Defines a topological malignant region by persistent homology, measures immune-cell infiltration by signed distance and local density, and relates these features to patient survival in CNS lymphoma."
+  },
+  "Koljancic2025_UntargetedChemicalProfilingTwoDimensiona": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Koljancic2025_UntargetedChemicalProfilingTwoDimensiona.jpg",
+   "wiki_uid": "w89c4121b34ae",
+   "figure_file": "19e8f4f0-c3b9-44ad-a8ff-34f5a47dd392-07_1142_1072_1364_521.jpg",
+   "caption": "Ball Mapper graph of wine mass spectral vectors, nodes colored by Austrian sample share.",
+   "synopsis": "Uses Ball Mapper for untargeted analysis of GC×GC–HR-TOF-MS data from 34 botrytized wines, extracting sample-specific mass spectral features whose clusters align with region, producer and botrytization style."
+  },
+  "Hahn2009_ANonlinearStructureTensorDiffusivityMatr": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2009_ANonlinearStructureTensorDiffusivityMatr.jpg",
+   "wiki_uid": "w8c566caf70be",
+   "figure_file": "89a04214-98c5-415b-8e75-e9dd78d9c4c6-11_806_1154_158_673.jpg",
+   "caption": "Minimum-eigenvalue map and surface of the regularized tensor, with peaks at four corners.",
+   "synopsis": "Regularizes the structure tensor of an image by a nonlinear PDE whose diffusivity matrix is built from the image gradient, applied to denoising, enhancement and corner detection."
+  },
+  "Hahn2010_GeometricAttractionDrivenFlowImageSegmen": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2010_GeometricAttractionDrivenFlowImageSegmen.jpg",
+   "wiki_uid": "wcd1ca48de694",
+   "figure_file": "51787a8c-4902-4511-b968-e768ab1b0261-08_1252_1138_226_477.jpg",
+   "caption": "Four-color labels of image regions and final segmentation contours on a cube image.",
+   "synopsis": "Segments images with weak edges, holes and multiple junctions by level-set active contours that combine a geometric attraction-driven flow, a binary edge function and a binary balloon force."
+  },
+  "Hahn2011_OrientationMatchingMinimizationImageDeno": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2011_OrientationMatchingMinimizationImageDeno.jpg",
+   "wiki_uid": "wd5dd03f35c09",
+   "figure_file": "bd4d2584-088a-4186-8c99-e659a6994073-13_636_1285_1811_613.jpg",
+   "caption": "Image with red inpainting region and the orientation-matching reconstruction.",
+   "synopsis": "Denoises and inpaints images in two steps: the TV-Stokes equation regularizes the tangent vector field, then an orientation-matching minimization aligns the image gradient with the regularized normal field."
+  },
+  "Tai2009_ImageDenoisingTVStokesEquationOrientationMat": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Tai2009_ImageDenoisingTVStokesEquationOrientationMat.jpg",
+   "wiki_uid": "w7b49866e1c8f",
+   "figure_file": "cd88e0fc-cd30-4626-955e-73277df1ea62-10_648_927_180_282.jpg",
+   "caption": "Noisy zebra image and its denoised result from the orientation-matching method.",
+   "synopsis": "Denoises images in two steps: the TV-Stokes equation regularizes the tangent vector field, then an orientation-matching minimization reconstructs an image with sharp edges and smooth regions."
+  },
+  "Tai2011_AFastAlgorithmEulerSElasticaModelAugment": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Tai2011_AFastAlgorithmEulerSElasticaModelAugment.jpg",
+   "wiki_uid": "wc5d1b2429b63",
+   "figure_file": "b9a7978d-6da2-4131-9712-0f5f9b2af173-28_506_908_742_612.jpg",
+   "caption": "Image with salt-and-pepper noise and the result of elastica-based denoising.",
+   "synopsis": "Minimizes Euler's elastica energy with an augmented Lagrangian method whose subproblems are solved in closed form or by FFT, applied to image denoising, inpainting and zooming."
+  },
+  "Duan2012_AFastAugmentedLagrangianMethodEulersElas": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Duan2012_AFastAugmentedLagrangianMethodEulersElas.jpg",
+   "wiki_uid": "w598a555fbe46",
+   "figure_file": "6afcbab8-e8e9-489e-929f-339e33d92c50-10_682_932_1249_279.jpg",
+   "caption": "Noisy synthetic image and its Euler's elastica denoised result.",
+   "synopsis": "Minimizes Euler's elastica energy for image denoising with an augmented Lagrangian method whose curvature variable h = div n makes each subproblem closed-form or linear, without FFT."
+  },
+  "Duan2013_FastAugmentedLagrangianMethodEulersElastica": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Duan2013_FastAugmentedLagrangianMethodEulersElastica.jpg",
+   "wiki_uid": "wb2253e8e6304",
+   "figure_file": "a0ce515e-f7d5-4caf-9e14-d535bb867f88-20_853_1104_356_388.jpg",
+   "caption": "Noisy liver CT slice and its Euler's elastica denoised result.",
+   "synopsis": "Minimizes Euler's elastica energy with an FFT-free augmented Lagrangian method that adds a curvature variable h = div n, applied to image denoising (including CT), inpainting and zooming."
+  },
+  "Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2012_AugmentedLagrangianMethodGeneralizedTVSt.jpg",
+   "wiki_uid": "w4804d412ed87",
+   "figure_file": "20fe5d33-ae44-4936-ac28-0a384b08596c-20_386_1221_957_149.jpg",
+   "caption": "Normal vectors on sketch curves and the height surface reconstructed from them.",
+   "synopsis": "Generalizes the two-step TV-Stokes model (regularize the tangential field, then fit the data) with an augmented Lagrangian solver, applied to inpainting, denoising and surface reconstruction from sparse gradients."
+  },
+  "Hahn2012_FastAlgorithmsPElasticaEnergyApplication": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2012_FastAlgorithmsPElasticaEnergyApplication.jpg",
+   "wiki_uid": "w71d0e3acca5e",
+   "figure_file": "60fa54a3-ad78-477c-902a-ce866e74534d-10_831_859_188_311.jpg",
+   "caption": "Red masked regions (top) and p-elastica inpainting results (bottom) for two images.",
+   "synopsis": "Minimizes the curvature-based p-elastica energy with two augmented Lagrangian algorithms that simplify the normal-field subproblem, applied to image inpainting and curve reconstruction from noisy unorganized point sets."
+  },
+  "Hintermuller2014_FunctionalAnalyticNumericalIssuesSplitti": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hintermuller2014_FunctionalAnalyticNumericalIssuesSplitti.jpg",
+   "wiki_uid": "w730296047128",
+   "figure_file": "e2c06993-1f81-4ded-a533-353a05f8775f-30_988_1317_312_317.jpg",
+   "caption": "Noisy image and its total-variation denoising result.",
+   "synopsis": "Analyzes variable-splitting and augmented Lagrangian methods for total-variation image denoising in function space, in primal and Fenchel pre-dual form, and proposes a staggered-grid discretization for the pre-dual.",
+   "figure_note": "panels (a) and (c); replaced a figure with a person's photo (GDPR rule)"
+  },
+  "Park2014_IMAGESEGMENTATIONSTATISTICALVARIATIONALF": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Park2014_IMAGESEGMENTATIONSTATISTICALVARIATIONALF.jpg",
+   "wiki_uid": "wa7afec49f1dd",
+   "figure_file": "9d9e50c0-bff6-46ef-b1a0-5381a2a7a13a-13_716_1125_475_443.jpg",
+   "caption": "Camera photograph with the segmentation boundary drawn in red.",
+   "synopsis": "Segments images modeled as a mixture of two Gaussian intensity distributions by adding a local region energy that reclassifies pixels in ambiguous regions using locally estimated Gaussian parameters."
+  },
+  "Lee2007_AVariationalApproachBlendingWarpingNonOv": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Lee2007_AVariationalApproachBlendingWarpingNonOv.jpg",
+   "wiki_uid": "w32acd754677d",
+   "figure_file": "7c083f8b-9fca-4ec3-97fa-e01f7317394d-6_2025_808_230_1115.jpg",
+   "caption": "Blending sequence from a disk to a non-overlapping diamond: start, intermediate, end.",
+   "synopsis": "Blends source and target images, including non-overlapping ones, by a variational model whose two deformation fields warp both shapes toward a common intermediate shape."
+  },
+  "SukhoLee2006_ConductivityImageReconstructionDefective": {
+   "include": true,
+   "figure_src": "assets/paperfigs/SukhoLee2006_ConductivityImageReconstructionDefective.jpg",
+   "wiki_uid": "wfcb404e51921",
+   "figure_file": "a18d3273-3ad3-45a0-93b6-31be48432ada-7_710_1434_210_313.jpg",
+   "caption": "Phantom conductivity images reconstructed without and with recovered Bz data.",
+   "synopsis": "Recovers the magnetic flux density Bz in low-MR-signal regions for MREIT conductivity imaging by level-set segmentation and a Dirichlet Laplace problem, tested numerically and on a piglet."
+  },
+  "Hahn2013_StrokeBasedSurfaceReconstruction": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Hahn2013_StrokeBasedSurfaceReconstruction.jpg",
+   "wiki_uid": "w7e8039db95cd",
+   "figure_file": "66d0b3d1-4b20-47a2-8d7e-a62c38e8d4b8-21_750_1314_1482_413.jpg",
+   "caption": "Line sketch of a draped figure and the 3D surface reconstructed from it.",
+   "synopsis": "Reconstructs a 3-D height map from sparse artist strokes by interpolating a curl-free normal field with TV/H¹ regularization and integrating it; stroke types create ridges, valleys and jumps."
+  },
+  "Kwon2008_AFastSphericalInflationMethodCerebralCor": {
+   "include": true,
+   "figure_src": "assets/paperfigs/Kwon2008_AFastSphericalInflationMethodCerebralCor.jpg",
+   "wiki_uid": "w3c225c26ff2e",
+   "figure_file": "2ac8dcca-bf7a-4ec1-a5c0-b361aebc7dbb-5_317_529_1151_325.jpg",
+   "caption": "Cortical surface of one hemisphere and its spherical inflation.",
+   "synopsis": "Maps a genus-zero cortical surface, represented as a simplex mesh, onto a sphere without folded polygons, deforming vertices in 2-D polar coordinates and then minimizing linear distortion."
+  }
+ },
+ "notice": {
+  "until": "2026-10-31",
+  "link_text": "Details",
+  "text": "Funded 3-year PhD position in the GAČR project <b>MIND-MAP</b>: PDEs, deep learning and geometry-informed topological data analysis for 3D&nbsp;+&nbsp;time microglia imaging. Apply by 31&nbsp;October&nbsp;2026."
+ },
+ "meta_description": "Jooyoung Hahn, Assistant Professor of Applied Mathematics, Czech Technical University in Prague. Finite-volume methods on polyhedral meshes, geometry-informed topological data analysis, neural-network solvers for PDEs.",
+ "build": {
+  "photo": "assets/photo.jpg",
+  "cv_source": "../../CV_Hahn/CV_in_homepage/CV_Hahn_without_publication.pdf",
+  "cv_name": "CV_Hahn.pdf",
+  "opening_source": "../../Research_Fund/GACR_LA_call_PL/PhD_flyer/MIND-MAP_PhD_flyer.html",
+  "updated": "September 2026",
+  "site_url": "https://jooyounghahn.github.io/",
+  "cv_link": false,
+  "opening_link": false,
+  "_link_note": "set cv_link / opening_link to true to publish the CV PDF and the PhD flyer and show their menu items"
+ }
+}
