@@ -8,10 +8,12 @@ Content lives in `data/` and `assets/`, the design lives in `build/theme.py`, an
 written twice.
 
 ```
-  data/content.json        profile, intro, opening notice, research categories,
+  data/content.json        profile, intro, research categories,
                            per-paper figure + one-line synopsis
   data/publications.json   publication list (checked against Crossref)
   data/talks.json          invited talks, minisymposia (from the CV)
+  data/funding.json        grants, fellowships, industrial support
+  data/jobs.json           open and upcoming positions, flyer links
   data/interests.json      research-interest topics: label, description, figure
   data/papers.json         title and year per paper, from build/scan_papers.py
   assets/photo.jpg         profile photo
@@ -23,7 +25,8 @@ written twice.
             |  python build/render.py
             v
   docs/                    index.html (Research) · interests.html
-                           publications.html · talks.html
+                           publications.html · funding.html · talks.html
+                           jobs.html + jobs/<flyer>.html · CV_Hahn.pdf
 ```
 
 `docs/` is wiped and rebuilt on every run. Never edit it by hand.
@@ -32,23 +35,26 @@ written twice.
 
 | Page | Source |
 |---|---|
-| Research (home) | `content.json`: `intro`, `notice`, `categories`, `papers` |
+| Research (home) | `content.json`: `intro`, `categories`, `papers` |
 | Research interests | `interests.json` |
 | Publications | `publications.json`, four tabs: journal, conference, preprint, patent |
+| Funding | `funding.json` |
 | Talks | `talks.json` |
-| CV *(off)* | copied at build time from the CV folder; see below |
-| Open position *(off)* | copied at build time from the PhD flyer; see below |
+| Jobs | `jobs.json` |
+| CV (PDF) | compiled at build time from the CV `.tex`; see below |
 
-The CV and the flyer are **not published at the moment**: `build.cv_link` and
-`build.opening_link` in `content.json` are `false`, so neither file is copied and
-neither menu item appears. Set one to `true` and rebuild to publish it. Both are
-copied fresh on every build, so updating the original and rebuilding is enough.
+**CV:** every build runs `latexmk` on `build.cv_tex` in a temporary folder (the CV
+folder gets no aux files) and publishes the PDF as `CV_Hahn.pdf`. Edit the `.tex`,
+rebuild, push. A LaTeX error stops the build. Set `build.cv_link` to `false` to hide it.
+
+**Jobs:** a link with a `file` is a flyer; the build copies that file unchanged to
+`jobs/`, so update the original and rebuild. Status lines ("Coming soon",
+"Applications closed, under evaluation") live in `jobs.json` only, never in the flyer.
 
 ## Common edits
 
 - **Intro text:** `content.json` → `intro`.
-- **Opening notice on the home page:** `content.json` → `notice`. After the `until`
-  date it hides itself. To remove it for good, delete `notice`.
+- **A position:** add or edit an item in `jobs.json`; change its `status` as it moves on.
 - **A new paper:** add it to `publications.json`. To list it on the Research page too,
   put the PDF, `.md` and `.assets/` in the paper archive, run
   `python build/scan_papers.py`, add its key to a category in `content.json`, and give it
@@ -69,7 +75,7 @@ python build/render.py
 Everything visual is in `build/theme.py`: the `PALETTE` dict (light and dark) and one
 stylesheet. The palette is *Meridian: Sky & Ink*. It uses a sky-tinted sidebar, navy ink
 and one steel blue for links. A cold carmine is used **only** as a marker, on the
-active navigation item and on the rule beside the opening notice.
+active navigation item and on the status of a position on the Jobs page.
 
 The layout depends on the screen:
 

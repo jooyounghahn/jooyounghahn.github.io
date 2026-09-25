@@ -10,7 +10,7 @@ muted / link / emphasis >= 4.5:1, in both themes.
 
 The emphasis colour (cold carmine) is deliberately rationed.  It is allowed on:
   - the marker on the active navigation item
-  - the left rule of the open-position notice and the small "PhD" word in the nav
+  - the status of a position on the Jobs page ("Coming soon", ...)
 It must never colour links, headings, body text, buttons or figures.
 
 One type family throughout (the system sans); no uppercase labels.
@@ -97,7 +97,6 @@ nav.nav a{color:var(--fg);font-size:.95rem;padding:.3rem 0 .3rem .7rem;border-le
 nav.nav a:hover{color:var(--accent);text-decoration:none}
 nav.nav a[aria-current="page"]{border-left-color:var(--em);font-weight:600}
 .ext{font-size:.78em;color:var(--muted);margin-left:.25em}
-.phd{font-size:.78em;color:var(--em);margin-left:.3em;font-weight:600}
 .links{display:flex;flex-wrap:wrap;gap:.1rem .9rem;margin-top:auto;border-top:1px solid var(--rule);padding-top:.7rem}
 .links a{font-size:.84rem;color:var(--muted)}
 .links a:hover{color:var(--accent)}
@@ -128,8 +127,6 @@ h2.sec:first-child{margin-top:0}
 /* ------------------------------------------------------------ home */
 .intro{font-size:1.02rem;max-width:44rem}
 .intro p+p{margin-top:.8rem}
-.notice{margin:1.4rem 0 0;padding:.1rem 0 .1rem .9rem;border-left:3px solid var(--em);max-width:44rem}
-.notice p{font-size:.95rem;line-height:1.5}
 
 .cats{border-bottom:1px solid var(--rule)}
 details.cat{border-top:1px solid var(--rule)}
@@ -223,6 +220,7 @@ details.cat[open] .cm .open::after{content:" \\25B4"}
 .dlist .te{font-size:.87rem;color:var(--muted);line-height:1.45}
 .dlist .te+.te{margin-top:.15rem}
 .dlist .te a{white-space:nowrap}
+.dlist .st{color:var(--em);font-weight:600}
 @media (min-width:720px){
   .dlist li{grid-template-columns:5.6rem minmax(0,1fr);gap:1rem}
   .dlist .td{padding-top:.1rem}

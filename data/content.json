@@ -387,13 +387,11 @@
  "meta_description": "Jooyoung Hahn, Assistant Professor of Applied Mathematics, Czech Technical University in Prague. Finite-volume methods on polyhedral meshes, geometry-informed topological data analysis, neural-network solvers for PDEs.",
  "build": {
   "photo": "assets/photo.jpg",
-  "cv_source": "../../CV_Hahn/CV_in_homepage/CV_Hahn_without_publication.pdf",
+  "cv_tex": "../../CV_Hahn/CV_in_homepage/CV_Hahn_without_publication.tex",
   "cv_name": "CV_Hahn.pdf",
-  "opening_source": "../../Research_Fund/GACR_LA_call_PL/PhD_flyer/MIND-MAP_PhD_flyer.html",
   "updated": "September 2026",
   "site_url": "https://jooyounghahn.github.io/",
-  "cv_link": false,
-  "opening_link": false,
-  "_link_note": "set cv_link / opening_link to true to publish the CV PDF and the PhD flyer and show their menu items"
+  "cv_link": true,
+  "_link_note": "cv_tex is compiled with latexmk on every build and published as cv_name; set cv_link to false to hide the CV"
  }
 }

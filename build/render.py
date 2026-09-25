@@ -2,9 +2,10 @@
 """
 render.py — data  ->  the published site.
 
-    data/content.json       profile, intro, notice, research categories, per-paper figure + synopsis
+    data/content.json       profile, intro, research categories, per-paper figure + synopsis
     data/publications.json  the publication list (verified against Crossref)
     data/talks.json         invited talks and minisymposia (from the CV)
+    data/jobs.json          open and upcoming positions, with their flyers
     data/interests.json     research-interest topics (text + generated figure)
     data/papers.json        paper facts, regenerated from the archive by scan_papers.py
     assets/                 source images: photo, heroes/, paperfigs/, interests/
@@ -12,7 +13,7 @@ render.py — data  ->  the published site.
             |
             v
     docs/   index.html (Research) · interests.html · publications.html · talks.html
-            CV_Hahn.pdf · opening/<flyer>.html · assets/...
+            jobs.html · CV_Hahn.pdf (compiled from the CV .tex) · jobs/<flyer>.html · assets/...
 
 The build is all-or-nothing: every input is checked first, the site is written to a
 temporary sibling directory, and only a complete build replaces docs/.  Any missing
@@ -29,7 +30,9 @@ import base64
 import html
 import json
 import shutil
+import subprocess
 import sys
+import tempfile
 from datetime import date
 from pathlib import Path
 
@@ -169,6 +172,7 @@ NAV = [  # id, sidebar label, phone label, file
     ("publications", "Publications", "Papers", "publications.html"),
     ("funding", "Funding", "Funding", "funding.html"),
     ("talks", "Talks", "Talks", "talks.html"),
+    ("jobs", "Jobs", "Jobs", "jobs.html"),
 ]
 
 
@@ -185,10 +189,6 @@ def shell(content: dict, page: str, fname: str, title: str, body: str, build: di
         if build.get("cv_href"):
             out.append(f'<a href="{esc(build["cv_href"])}" target="_blank" rel="noopener">CV'
                        f'<span class="ext">PDF</span></a>')
-        if build.get("opening_href"):
-            until = f' data-until="{esc(build["opening_until"])}"' if build.get("opening_until") else ""
-            out.append(f'<a href="{esc(build["opening_href"])}" target="_blank" rel="noopener"{until}>'
-                       f'{"Opening" if short else "Open position"}<span class="phd">PhD</span></a>')
         return "".join(out)
 
     mail = f'<a href="#" class="mail" data-u="{u}" data-d="{d}">Email</a>'
@@ -439,21 +439,10 @@ def page_publications(pubs) -> str:
     return "\n".join(parts)
 
 
-def notice_html(content) -> str:
-    n = content.get("notice") or {}
-    if not n.get("text"):
-        return ""
-    until = f' data-until="{esc(n["until"])}"' if n.get("until") else ""
-    link = (f' <a href="{esc(n["href"])}" target="_blank" rel="noopener">{esc(n.get("link_text", "Details"))}</a>'
-            if n.get("href") else "")
-    return f'<div class="notice"{until}><p>{n["text"]}{link}</p></div>'
-
-
-def page_funding(funding, content) -> str:
+def page_funding(funding) -> str:
     parts = ['<h1 class="page">Funding</h1>']
     if funding.get("lede"):
         parts.append(f'<p class="lede">{esc(funding["lede"])}</p>')
-    parts.append(notice_html(content))
     for g in funding.get("groups", []):
         lis = []
         for it in g.get("items", []):
@@ -486,6 +475,39 @@ def page_talks(talks) -> str:
     return "\n".join(parts)
 
 
+def page_jobs(jobs) -> str:
+    """Each item: period, title, status, optional where, note and links; a link with
+    "file" points at a flyer that build() copies into jobs/ unchanged."""
+    nt = ' target="_blank" rel="noopener"'
+    parts = ['<h1 class="page">Jobs</h1>']
+    if jobs.get("lede"):
+        parts.append(f'<p class="lede">{txt(jobs["lede"])}</p>')
+    for g in jobs.get("groups", []):
+        lis = []
+        for it in g.get("items", []):
+            meta = " · ".join(x for x in (it.get("where"), f'<span class="st">{esc(it["status"])}</span>'
+                                          if it.get("status") else "") if x)
+            note = f'<p class="te">{txt(it["note"])}</p>' if it.get("note") else ""
+            links = " · ".join(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>' for l in it.get("links", []))
+            links = f'<p class="te">{links}</p>' if links else ""
+            lis.append(f'<li><span class="td">{esc(it.get("period", ""))}</span><div>'
+                       f'<p class="tt">{txt(it["title"])}</p>'
+                       f'<p class="te">{meta}</p>{note}{links}</div></li>')
+        parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
+    return "\n".join(parts)
+
+
+def compile_cv(tex: Path, dst: Path) -> None:
+    """latexmk into a throw-away folder, so the CV folder gets no aux files."""
+    with tempfile.TemporaryDirectory() as t:
+        r = subprocess.run(["latexmk", "-pdf", "-interaction=nonstopmode", "-halt-on-error",
+                            f"-outdir={t}", tex.name], cwd=tex.parent, capture_output=True, text=True)
+        pdf = Path(t) / (tex.stem + ".pdf")
+        if r.returncode or not pdf.is_file():
+            sys.exit(f"render.py: CV did not compile ({tex})\n" + r.stdout[-2000:])
+        shutil.copyfile(pdf, dst)
+
+
 # --------------------------------------------------------------------------- build
 FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <rect width="64" height="64" rx="10" fill="#D8E5F0"/>
@@ -512,19 +534,25 @@ def build(out_dir: str = "docs") -> Path:
     pubs = load("publications.json")
     talks = load("talks.json")
     funding = load("funding.json")
+    jobs = load("jobs.json")
     interests = load("interests.json")
     known = {p["key"]: p for p in papers.get("papers", [])}
     pubs["entries"] = [e for e in pubs.get("entries", []) if not e.get("hidden")]
     pubs_by_key = {e["paper_key"]: e for e in pubs["entries"] if e.get("paper_key")}
 
     b = content.get("build", {})
-    cv_on = bool(b.get("cv_source")) and b.get("cv_link", True)
-    opening_on = bool(b.get("opening_source")) and b.get("opening_link", True)
+    cv_on = bool(b.get("cv_tex")) and b.get("cv_link", True)
     sources = {"photo": SITE / b.get("photo", "")}
     if cv_on:
-        sources["cv_source"] = (SITE / b["cv_source"]).resolve()
-    if opening_on:
-        sources["opening_source"] = (SITE / b["opening_source"]).resolve()
+        sources["cv_tex"] = (SITE / b["cv_tex"]).resolve()
+    flyers = {}                                   # published name -> source file
+    for g in jobs.get("groups", []):
+        for it in g.get("items", []):
+            for l in it.get("links", []):
+                if l.get("file"):
+                    src = (SITE / l["file"]).resolve()
+                    sources[f'flyer {l["href"]}'] = src
+                    flyers[l["href"]] = src
     missing = [f"{k}: {v}" for k, v in sources.items() if not v.is_file()]
     if missing:
         sys.exit("render.py: missing inputs\n  " + "\n  ".join(missing))
@@ -541,31 +569,24 @@ def build(out_dir: str = "docs") -> Path:
     cv_name = ""
     if cv_on:
         cv_name = b.get("cv_name", "CV_Hahn.pdf")
-        shutil.copyfile(sources["cv_source"], tmp / cv_name)
-
-    opening_href = ""
-    if "opening_source" in sources:
-        op = sources["opening_source"]
-        (tmp / "opening").mkdir()
-        shutil.copyfile(op, tmp / "opening" / op.name)
-        opening_href = f"opening/{op.name}"
-        content.setdefault("notice", {})["href"] = opening_href
-    elif content.get("notice"):
-        content["notice"].pop("href", None)
+        compile_cv(sources["cv_tex"], tmp / cv_name)
+    for href, src in flyers.items():            # byte-for-byte copies; the flyers are not edited
+        (tmp / href).parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, tmp / href)
 
     site_url = b.get("site_url", "")
     if site_url and not site_url.endswith("/"):
         site_url += "/"
-    bld = {"photo_size": photo_size, "cv_href": cv_name, "opening_href": opening_href,
-           "opening_until": (content.get("notice") or {}).get("until", ""),
+    bld = {"photo_size": photo_size, "cv_href": cv_name,
            "site_url": site_url, "updated": b.get("updated") or date.today().strftime("%B %Y")}
 
     pages = {
         "index.html": ("research", "Research", page_research(content, known, pubs_by_key, tmp)),
         "interests.html": ("interests", "Research interests", page_interests(interests, tmp)),
         "publications.html": ("publications", "Publications", page_publications(pubs)),
-        "funding.html": ("funding", "Funding", page_funding(funding, content)),
+        "funding.html": ("funding", "Funding", page_funding(funding)),
         "talks.html": ("talks", "Talks", page_talks(talks)),
+        "jobs.html": ("jobs", "Jobs", page_jobs(jobs)),
     }
     if PROBLEMS:
         shutil.rmtree(tmp)
@@ -585,7 +606,7 @@ def build(out_dir: str = "docs") -> Path:
          if (out / "assets" / d).exists()}
     kb = sum(f.stat().st_size for f in out.rglob("*") if f.is_file()) // 1024
     print(f"built {out}: {', '.join(pages)}  ({kb} KB)")
-    print(f"  images: {n} · {cv_name or 'CV off'} · {opening_href or 'opening off'}")
+    print(f"  images: {n} · {cv_name or 'CV off'} · flyers: {len(flyers)}")
     return out
 
 

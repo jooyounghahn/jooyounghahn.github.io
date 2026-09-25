@@ -1,0 +1,36 @@
+{
+ "_source": "MIND-MAP: GAČR 27-25263L (spelled MIND-MAP in every proposal document). CROP: ../Research_Fund/CROP/CROP Postdoc Flyer -EURAXESS-.html, published unchanged; the status line is on this page only.",
+ "groups": [
+  {
+   "title": "Positions",
+   "items": [
+    {
+     "period": "2027",
+     "title": "PhD position in the MIND-MAP project",
+     "status": "Coming soon"
+    },
+    {
+     "period": "2026",
+     "title": "CROP Postdoc: Geometry-Aware Machine Learning & Topological Data Analysis",
+     "where": "CROP International Postdoc Programme (MSCA COFUND), Czech Technical University in Prague",
+     "status": "Applications closed, under evaluation",
+     "links": [
+      {
+       "label": "Flyer",
+       "href": "jobs/CROP_Postdoc_Flyer.html",
+       "file": "../../Research_Fund/CROP/CROP Postdoc Flyer -EURAXESS-.html"
+      },
+      {
+       "label": "CROP programme",
+       "href": "https://international.cvut.cz/jobs-at-ctu/crop-postdoctoral-fellowship-programme/"
+      },
+      {
+       "label": "EURAXESS",
+       "href": "https://euraxess.ec.europa.eu/jobs/440228"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
