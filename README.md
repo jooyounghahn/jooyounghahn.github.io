@@ -36,7 +36,7 @@ written twice.
 | Page | Source |
 |---|---|
 | Research (home) | `content.json`: `intro`, `categories`, `papers` |
-| Research interests | `interests.json` |
+| Research Interests | `interests.json` (in-page tabs, one per group) |
 | Publications | `publications.json`, four tabs: journal, conference, preprint, patent |
 | Funding | `funding.json` |
 | Talks | `talks.json` |

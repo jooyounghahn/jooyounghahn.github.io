@@ -130,25 +130,33 @@ details.cat[open] .cm .open::after{content:" \25B4"}
 .topic img{width:100%;max-width:420px;aspect-ratio:4/3;object-fit:contain;background:var(--figmat);
   border:1px solid var(--rule);border-radius:3px}
 
-/* ------------------------------------------------------------ publications */
-.ptabs{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);margin:0 0 .3rem}
-.ptabs button{appearance:none;-webkit-appearance:none;background:none;border:0;border-bottom:2px solid transparent;
-  margin:0 0 -1px;padding:.55rem .15rem .5rem;font:inherit;color:var(--muted);cursor:pointer;
-  display:flex;flex-direction:column;align-items:center;line-height:1.25}
+/* ------------------------------------------------------------ in-page tabs (interests, publications) */
+/* every section stays on the page; a tab only scrolls to it (smoothly unless reduced motion) */
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.ptabs{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);margin:0 0 .3rem;
+  position:sticky;top:var(--mnav,0px);z-index:5;background:var(--bg)}
+.ptabs a{border-bottom:2px solid transparent;margin:0 0 -1px;padding:.55rem .15rem .5rem;color:var(--muted);
+  display:flex;flex-direction:column;align-items:center;line-height:1.25;text-align:center}
 .ptabs .lb{font-size:.9rem;font-weight:600}
 .ptabs .nm{font-size:.78rem}
-.ptabs button:hover{color:var(--accent)}
-.ptabs button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.ptabs a:hover{color:var(--accent);text-decoration:none}
+.ptabs a[aria-current="true"]{color:var(--fg);border-bottom-color:var(--accent)}
 @media (min-width:600px){
   .ptabs{justify-content:flex-start;gap:1.8rem}
   .ptabs .lb{font-size:.95rem}
-  .ptabs button{flex-direction:row;align-items:baseline;gap:.4rem;padding:.55rem 0 .5rem}
+  .ptabs a{flex-direction:row;align-items:baseline;gap:.4rem;padding:.55rem 0 .5rem;text-align:left}
 }
 @media (max-width:359px){.ptabs .lb{font-size:.82rem}}
-.ppanel:focus-visible{outline-offset:4px}
+.jsec{scroll-margin-top:calc(var(--mnav,0px) + var(--jump,2.6rem) + .6rem - 4rem)} /* html has scroll-padding-top:4rem */
+.jsec+.jsec{margin-top:2.8rem}
+h2.sec.band{margin:1.6rem 0 .2rem;padding:.5rem .8rem;background:var(--side);border-left:3px solid var(--accent);
+  border-radius:0 3px 3px 0;font-size:1.2rem}
+.jsec .topic:first-child,.jsec .yr:first-of-type{border-top:0}
+.topic p.with{margin-top:.5rem;font-size:.87rem;color:var(--muted);line-height:1.45}
+
+/* ------------------------------------------------------------ publications */
 .pnote{color:var(--muted);font-size:.87rem;margin:.8rem 0 .2rem}
 .yr{border-top:1px solid var(--rule);padding:.9rem 0 .3rem}
-.ppanel .yr:first-of-type{border-top:0}
 .yr h3{font-size:1rem;font-weight:650;color:var(--fg);margin:0 0 .4rem}
 .pubs{list-style:none;margin:0;padding:0}
 .pubs li{padding:.15rem 0 .95rem;font-size:.95rem;line-height:1.45}

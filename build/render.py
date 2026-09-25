@@ -168,7 +168,7 @@ def link_html(e: dict) -> str:
 # --------------------------------------------------------------------------- page shell
 NAV = [  # id, sidebar label, phone label, file
     ("research", "Research", "Research", "index.html"),
-    ("interests", "Research interests", "Interests", "interests.html"),
+    ("interests", "Research Interests", "Interests", "interests.html"),
     ("publications", "Publications", "Papers", "publications.html"),
     ("funding", "Funding", "Funding", "funding.html"),
     ("talks", "Talks", "Talks", "talks.html"),
@@ -344,8 +344,41 @@ def page_research(content, known, pubs_by_key, out: Path) -> str:
     return "\n".join(parts)
 
 
+JUMP_JS = """<script>
+(function(){
+  var bar=document.querySelector('.jump');if(!bar)return;
+  var links=[].slice.call(bar.querySelectorAll('a'));
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+  var root=document.documentElement;
+  function sizes(){
+    var m=document.querySelector('.mnav');
+    var mh=m&&m.offsetParent!==null?m.offsetHeight:0;
+    root.style.setProperty('--mnav',mh+'px');
+    root.style.setProperty('--jump',bar.offsetHeight+'px');
+  }
+  function mark(){
+    var cur=0,pad=parseFloat(getComputedStyle(root).scrollPaddingTop)||0;
+    secs.forEach(function(s,i){
+      if(s&&s.getBoundingClientRect().top<=pad+(parseFloat(getComputedStyle(s).scrollMarginTop)||0)+8)cur=i;});
+    if(window.innerHeight+window.scrollY>=document.body.scrollHeight-2)cur=secs.length-1;
+    links.forEach(function(a,i){if(i===cur)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+  }
+  sizes();mark();
+  window.addEventListener('resize',function(){sizes();mark();});
+  window.addEventListener('scroll',mark,{passive:true});
+})();
+</script>"""
+
+
+def jump_bar(label: str, items) -> str:
+    """In-page tabs: every section stays on the page, a tab only scrolls to it."""
+    links = "".join(f'<a href="#{esc(i)}"><span class="lb">{txt(t)}</span><span class="nm">{n}</span></a>'
+                    for i, t, n in items)
+    return f'<nav class="ptabs jump" aria-label="{esc(label)}">{links}</nav>'
+
+
 def page_interests(interests, out: Path) -> str:
-    parts = [f'<h1 class="page">{esc(interests.get("title", "Research interests"))}</h1>']
+    parts = [f'<h1 class="page">{esc(interests.get("title", "Research Interests"))}</h1>']
     if interests.get("lede"):
         parts.append(f'<p class="lede">{interests["lede"]}</p>')
     topics = interests.get("topics", [])
@@ -353,10 +386,13 @@ def page_interests(interests, out: Path) -> str:
     for t in topics:
         if t.get("group") not in groups:
             PROBLEMS.append(f"interests: topic {t.get('id')} has unknown group {t.get('group')!r}")
-    for group in groups:
+    bar, secs = [], []
+    for gi, group in enumerate(groups):
         items = [t for t in topics if t.get("group") == group]
         if not items:
             continue
+        gid = f"g{gi + 1}"
+        bar.append((gid, interests.get("tab_labels", {}).get(group, group), len(items)))
         lis = []
         for t in items:
             fig = ""
@@ -364,13 +400,18 @@ def page_interests(interests, out: Path) -> str:
                 size = web_image(SITE / t["figure"], out / "assets" / "interests" / f"{t['id']}.webp", TOPIC_W, "WEBP")
                 if size:
                     fig = img_tag(f"assets/interests/{t['id']}.webp", size, t.get("alt", ""))
+            who = (f'<p class="with">With {txt(t["collaborators"])}.</p>' if t.get("collaborators") else "")
             lis.append(f'<li class="topic" id="{esc(t["id"])}">{fig}<div>'
-                       f'<h3>{txt(t["label"])}</h3><p>{txt(t["description"])}</p></div></li>')
-        parts.append(f'<h2 class="sec">{txt(group)}</h2><ul class="topics">{"".join(lis)}</ul>')
+                       f'<h3>{txt(t["label"])}</h3><p>{txt(t["description"])}</p>{who}</div></li>')
+        secs.append(f'<section class="jsec" id="{gid}" aria-labelledby="{gid}-h">'
+                    f'<h2 class="sec band" id="{gid}-h">{txt(group)}</h2><ul class="topics">{"".join(lis)}</ul></section>')
+    parts.append(jump_bar("Research areas", bar))
+    parts.extend(secs)
+    parts.append(JUMP_JS)
     return "\n".join(parts)
 
 
-PUB_TABS = [  # tab id, tab label, entry types, visually hidden heading
+PUB_TABS = [  # section id, tab label, entry types, section heading
     ("journal", "Journal", ("journal",), "Journal articles"),
     ("conference", "Conference", ("proceedings", "presentation"), "Conference papers and presentations"),
     ("preprint", "Preprint", ("preprint",), "Preprints"),
@@ -398,44 +439,19 @@ def page_publications(pubs) -> str:
     parts = ['<h1 class="page">Publications</h1>']
     if pubs.get("lede"):
         parts.append(f'<p class="lede">{pubs["lede"]}</p>')
-    tabs, panels = [], []
-    for i, (tid, label, types, heading) in enumerate(PUB_TABS):
+    bar, secs = [], []
+    for tid, label, types, heading in PUB_TABS:
         items = [e for e in entries if e.get("type") in types]
         if not items:
             continue
-        sel = "true" if i == 0 else "false"
-        tabi = "" if i == 0 else ' tabindex="-1"'
-        tabs.append(f'<button type="button" role="tab" id="t-{tid}" aria-controls="p-{tid}" data-tab="{tid}"'
-                    f' aria-selected="{sel}"{tabi}><span class="lb">{label}</span>'
-                    f'<span class="nm">{len(items)}</span></button>')
+        bar.append((tid, label, len(items)))
         note = (f'<p class="pnote">{esc(pubs["conference_note"])}</p>'
                 if tid == "conference" and pubs.get("conference_note") else "")
-        panels.append(f'<div class="ppanel" id="p-{tid}" role="tabpanel" aria-labelledby="t-{tid}" tabindex="0">'
-                      f'<h2 class="vh">{heading}</h2>{note}{pub_years(items)}</div>')
-    parts.append(f'<div class="ptabs" role="tablist" aria-label="Publication type">{"".join(tabs)}</div>')
-    parts.append("".join(panels))
-    parts.append("""<script>
-(function(){
-  var tabs=[].slice.call(document.querySelectorAll('.ptabs [role=tab]'));
-  function pick(id,focus){
-    tabs.forEach(function(t){
-      var on=t.getAttribute('data-tab')===id;
-      t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
-      if(on&&focus)t.focus();
-    });
-  }
-  function go(id,focus){pick(id,focus);history.replaceState(null,'','#'+id);}
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){go(t.getAttribute('data-tab'));});
-    t.addEventListener('keydown',function(e){
-      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();
-      go(tabs[(i+d+tabs.length)%tabs.length].getAttribute('data-tab'),true);});
-  });
-  var h=location.hash.slice(1);
-  pick(tabs.some(function(t){return t.getAttribute('data-tab')===h;})?h:tabs[0].getAttribute('data-tab'));
-})();
-</script>""")
+        secs.append(f'<section class="jsec ppanel" id="{tid}" aria-labelledby="{tid}-h">'
+                    f'<h2 class="sec band" id="{tid}-h">{heading}</h2>{note}{pub_years(items)}</section>')
+    parts.append(jump_bar("Publication type", bar))
+    parts.extend(secs)
+    parts.append(JUMP_JS)
     return "\n".join(parts)
 
 
@@ -450,7 +466,7 @@ def page_funding(funding) -> str:
             note = f'<p class="te">{txt(it["note"])}</p>' if it.get("note") else ""
             lis.append(f'<li><span class="td">{esc(it["period"])}</span><div>'
                        f'<p class="tt">{txt(it["title"])}</p>'
-                       f'<p class="te">{txt(meta)}</p>{note}</div></li>')
+                       + (f'<p class="te">{txt(meta)}</p>' if meta else "") + f'{note}</div></li>')
         parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
     return "\n".join(x for x in parts if x)
 
@@ -582,7 +598,7 @@ def build(out_dir: str = "docs") -> Path:
 
     pages = {
         "index.html": ("research", "Research", page_research(content, known, pubs_by_key, tmp)),
-        "interests.html": ("interests", "Research interests", page_interests(interests, tmp)),
+        "interests.html": ("interests", "Research Interests", page_interests(interests, tmp)),
         "publications.html": ("publications", "Publications", page_publications(pubs)),
         "funding.html": ("funding", "Funding", page_funding(funding)),
         "talks.html": ("talks", "Talks", page_talks(talks)),
