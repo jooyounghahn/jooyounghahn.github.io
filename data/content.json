@@ -122,8 +122,8 @@
    "blurb": "Reconstruction of surfaces and curves from sketch strokes, sparse gradients and noisy point clouds, and spherical inflation of the cerebral cortex.",
    "hero": {
     "src": "assets/heroes/surface.jpg",
-    "caption": "A line drawing and the 3-D surface reconstructed from it.",
-    "provenance": "Hahn2012 J. Sci. Comput. Fig. 7"
+    "caption": "Gargoyle point cloud (left) and the surface reconstructed from it with the p-Poisson equation and a curl-free constraint (right).",
+    "provenance": "Park2023 NeurIPS (p-Poisson surface reconstruction, PINC), Fig. 3, Gargoyle row: point cloud and PINC columns"
    },
    "papers": [
     "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow",
