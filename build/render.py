@@ -4,7 +4,7 @@ render.py — data  ->  the published site.
 
     data/content.json       profile, intro, research categories, per-paper figure + synopsis
     data/publications.json  the publication list (verified against Crossref)
-    data/talks.json         invited talks and minisymposia (from the CV)
+    data/talks.json         invited and contributed talks, organized sessions, committees
     data/jobs.json          open and upcoming positions, with their flyers
     data/interests.json     research-interest topics (text + generated figure)
     data/papers.json        paper facts, regenerated from the archive by scan_papers.py
@@ -171,7 +171,7 @@ NAV = [  # id, sidebar label, phone label, file
     ("interests", "Research Interests", "Interests", "interests.html"),
     ("publications", "Publications", "Papers", "publications.html"),
     ("funding", "Funding", "Funding", "funding.html"),
-    ("talks", "Talks", "Talks", "talks.html"),
+    ("talks", "Talks & Conferences", "Talks", "talks.html"),
     ("jobs", "Jobs", "Jobs", "jobs.html"),
 ]
 
@@ -412,8 +412,7 @@ def page_interests(interests, out: Path) -> str:
 
 
 PUB_TABS = [  # section id, tab label, entry types, section heading
-    ("journal", "Journal", ("journal",), "Journal articles"),
-    ("conference", "Conference", ("proceedings", "presentation"), "Conference papers and presentations"),
+    ("papers", "Papers", ("journal", "proceedings"), "Journal and proceedings papers"),
     ("preprint", "Preprint", ("preprint",), "Preprints"),
     ("patent", "Patent", ("patent",), "Patents"),
 ]
@@ -445,10 +444,8 @@ def page_publications(pubs) -> str:
         if not items:
             continue
         bar.append((tid, label, len(items)))
-        note = (f'<p class="pnote">{esc(pubs["conference_note"])}</p>'
-                if tid == "conference" and pubs.get("conference_note") else "")
         secs.append(f'<section class="jsec ppanel" id="{tid}" aria-labelledby="{tid}-h">'
-                    f'<h2 class="sec band" id="{tid}-h">{heading}</h2>{note}{pub_years(items)}</section>')
+                    f'<h2 class="sec band" id="{tid}-h">{heading}</h2>{pub_years(items)}</section>')
     parts.append(jump_bar("Publication type", bar))
     parts.extend(secs)
     parts.append(JUMP_JS)
@@ -472,22 +469,34 @@ def page_funding(funding) -> str:
 
 
 def page_talks(talks) -> str:
+    """Sections with in-page tabs; an item has date, title, event, place and optional
+    authors (contributed talks), status, note and links."""
+    nt = ' target="_blank" rel="noopener"'
+
     def items(lst):
         out = []
         for t in lst:
-            links = " · ".join(f'<a href="{esc(l["href"])}" target="_blank" rel="noopener">{esc(l["label"])}</a>'
-                               for l in t.get("links", []))
-            links = f" · {links}" if links else ""
+            where = ", ".join(x for x in (esc(t.get("event")), esc(t.get("place"))) if x)
+            extra = [x for x in (f'<span class="st">{esc(t["status"])}</span>' if t.get("status") else "",
+                                 esc(t.get("note", "")),
+                                 *(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>' for l in t.get("links", [])))
+                     if x]
+            meta = " · ".join([where] + extra if where else extra)
+            who = f'<p class="te">{fmt_authors(t["authors"])}</p>' if len(t.get("authors", [])) > 1 else ""
             out.append(f'<li><span class="td">{esc(t["date"])}</span><div>'
-                       f'<p class="tt">{txt(t["title"])}</p>'
-                       f'<p class="te">{esc(t["event"])}, {esc(t["place"])}{links}</p></div></li>')
+                       f'<p class="tt">{txt(t["title"])}</p>{who}<p class="te">{meta}</p></div></li>')
         return "".join(out)
 
-    parts = ['<h1 class="page">Talks</h1>']
+    parts = [f'<h1 class="page">{esc(talks.get("title", "Talks"))}</h1>']
     if talks.get("lede"):
         parts.append(f'<p class="lede">{talks["lede"]}</p>')
-    parts.append(f'<h2 class="sec">Invited talks</h2><ol class="dlist">{items(talks.get("invited", []))}</ol>')
-    parts.append(f'<h2 class="sec">Minisymposia organized</h2><ol class="dlist">{items(talks.get("minisymposia", []))}</ol>')
+    secs = [x for x in talks.get("sections", []) if x.get("items")]
+    parts.append(jump_bar("Talk type", [(x["id"], x["tab"], len(x["items"])) for x in secs]))
+    for x in secs:
+        parts.append(f'<section class="jsec" id="{esc(x["id"])}" aria-labelledby="{esc(x["id"])}-h">'
+                     f'<h2 class="sec band" id="{esc(x["id"])}-h">{txt(x["heading"])}</h2>'
+                     f'<ol class="dlist">{items(x["items"])}</ol></section>')
+    parts.append(JUMP_JS)
     return "\n".join(parts)
 
 
@@ -601,7 +610,7 @@ def build(out_dir: str = "docs") -> Path:
         "interests.html": ("interests", "Research Interests", page_interests(interests, tmp)),
         "publications.html": ("publications", "Publications", page_publications(pubs)),
         "funding.html": ("funding", "Funding", page_funding(funding)),
-        "talks.html": ("talks", "Talks", page_talks(talks)),
+        "talks.html": ("talks", "Talks & Conferences", page_talks(talks)),
         "jobs.html": ("jobs", "Jobs", page_jobs(jobs)),
     }
     if PROBLEMS:

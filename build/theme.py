@@ -201,7 +201,6 @@ h2.sec.band{margin:1.6rem 0 .2rem;padding:.5rem .8rem;background:var(--side);bor
 .topic p.with{margin-top:.5rem;font-size:.87rem;color:var(--muted);line-height:1.45}
 
 /* ------------------------------------------------------------ publications */
-.pnote{color:var(--muted);font-size:.87rem;margin:.8rem 0 .2rem}
 .yr{border-top:1px solid var(--rule);padding:.9rem 0 .3rem}
 .yr h3{font-size:1rem;font-weight:650;color:var(--fg);margin:0 0 .4rem}
 .pubs{list-style:none;margin:0;padding:0}

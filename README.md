@@ -11,7 +11,7 @@ written twice.
   data/content.json        profile, intro, research categories,
                            per-paper figure + one-line synopsis
   data/publications.json   publication list (checked against Crossref)
-  data/talks.json          invited talks, minisymposia (from the CV)
+  data/talks.json          talks, organized sessions, committees (in-page tabs)
   data/funding.json        grants, fellowships, industrial support
   data/jobs.json           open and upcoming positions, flyer links
   data/interests.json      research-interest topics: label, description, figure
@@ -39,7 +39,7 @@ written twice.
 | Research Interests | `interests.json` (in-page tabs, one per group) |
 | Publications | `publications.json`, four tabs: journal, conference, preprint, patent |
 | Funding | `funding.json` |
-| Talks | `talks.json` |
+| Talks & Conferences | `talks.json`: `sections` (invited, contributed, sessions, committees) |
 | Jobs | `jobs.json` |
 | CV (PDF) | compiled at build time from the CV `.tex`; see below |
 
@@ -59,7 +59,7 @@ rebuild, push. A LaTeX error stops the build. Set `build.cv_link` to `false` to 
   put the PDF, `.md` and `.assets/` in the paper archive, run
   `python build/scan_papers.py`, add its key to a category in `content.json`, and give it
   a `figure_src` (a JPEG in `assets/paperfigs/`) and a `synopsis`.
-- **A new talk:** add it at the top of `talks.json` → `invited` or `minisymposia`.
+- **A new talk, session or committee:** add it at the top of the `items` of its section in `talks.json`.
 - **A research-interest topic:** add an entry to `interests.json` → `topics`. Its
   `group` must be one of `groups`, and its `figure` is a path under `assets/interests/`.
 - **Last-updated line:** `content.json` → `build.updated`.
