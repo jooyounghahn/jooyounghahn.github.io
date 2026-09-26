@@ -470,7 +470,7 @@ def page_funding(funding) -> str:
 
 def page_talks(talks) -> str:
     """Sections with in-page tabs; an item has date, title, event, place and optional
-    authors (contributed talks), status, note and links."""
+    role (committees), authors (contributed talks), status, note and links."""
     nt = ' target="_blank" rel="noopener"'
 
     def items(lst):
@@ -481,7 +481,8 @@ def page_talks(talks) -> str:
                                  esc(t.get("note", "")),
                                  *(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>' for l in t.get("links", [])))
                      if x]
-            meta = " · ".join([where] + extra if where else extra)
+            meta = " · ".join(x for x in [esc(t.get("role", "")), where] if x)
+            meta = " · ".join(x for x in [meta, *extra] if x)
             who = f'<p class="te">{fmt_authors(t["authors"])}</p>' if len(t.get("authors", [])) > 1 else ""
             out.append(f'<li><span class="td">{esc(t["date"])}</span><div>'
                        f'<p class="tt">{txt(t["title"])}</p>{who}<p class="te">{meta}</p></div></li>')

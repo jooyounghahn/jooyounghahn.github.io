@@ -2,6 +2,11 @@
  "_source": "Invited talks, organized sessions: CV_Hahn_without_publication.tex (Invited Talks, Minisymposium Organizer). Contributed talks: publication_Hahn.tex (Conferences), moved here from publications.json; the CIRM 2022 talk is listed once, as invited. Committees: from the author (EKC 2017-2018 and the 2027 workshop). WCCM 2026 contributed talk: from the author, added to publication_Hahn.tex. ACOMEN 2025 talk and session: from the author and the ACOMEN 2025 programme.",
  "title": "Talks & Conferences",
  "sections": [
+  {"id": "committees", "tab": "Committees", "heading": "Committees", "items": [
+    {"date": "Aug 2027", "title": "Czech-Korean Workshop on Applied Mathematics", "role": "Organizer", "event": "20–22 August 2027", "place": "", "status": "Coming soon"},
+    {"date": "Aug 2018", "title": "Europe-Korea Conference on Science and Technology (EKC 2018)", "role": "Science & Technology Programme Committee", "event": "", "place": "Glasgow, UK", "note": "Session: Information Technology and Machine Learning"},
+    {"date": "Jul 2017", "title": "Europe-Korea Conference on Science and Technology (EKC 2017)", "role": "Science & Technology Programme Committee", "event": "", "place": "Stockholm, Sweden", "note": "Session: Industrial Mathematics for Scientific Computing: Imaging, Machine Learning and Computational Fluid Dynamics"}
+  ]},
   {"id": "invited", "tab": "Invited", "heading": "Invited talks", "items": [
     {"date": "Jun 2026", "title": "From High-Dimensional Chaos to Shape: Topological Data Analysis for Untargeted Volatile Profiling and Tumor Microenvironment", "event": "Humanoid Olfactory Display International Research Conference", "place": "Busan, South Korea"},
     {"date": "Dec 2025", "title": "A Topological Data Analysis Framework for Malignant-Immune Spatial Analysis", "event": "Data Science Convergence", "place": "Busan, South Korea"},
@@ -14,6 +19,22 @@
     {"date": "May 2022", "title": "What Is a Proper Boundary Condition to Solve the Eikonal Equation on a Non-convex Domain?", "event": "Workshop on Scientific Computing 2022", "place": "Děčín, Czech Republic"},
     {"date": "Sep 2020", "title": "Finite Volume Level Set Methods in Combustion Engines", "event": "ALGORITMY 2020, Conference on Scientific Computing", "place": "Podbanské, Vysoké Tatry, Slovakia"},
     {"date": "Jul 2019", "title": "Modeling for Medical Mathematics: Evolution of Manifolds, Finite Volume Method, and Deep Learning", "event": "Summer School for Modeling in Medical Mathematics, National Institute for Mathematical Sciences (NIMS)", "place": "Daejeon, South Korea"}
+  ]},
+  {"id": "sessions", "tab": "Sessions", "heading": "Organized sessions", "items": [
+    {"date": "Jul 2026", "title": "Neural Network Solvers for PDEs: Bridging Theory and Practice in Scientific Computing (Parts I–V)", "event": "WCCM / ECCOMAS 2026", "place": "Munich, Germany", "note": "with Alexander Heinlein (TU Delft)"},
+    {"date": "Sep 2025", "title": "Advancements in Neural Network Solvers for PDEs: Applications and Challenges", "event": "ACOMEN 2025, 9th International Conference on Advanced Computational Methods in Engineering and Applied Mathematics", "place": "Ghent, Belgium", "note": "with Minseok Choi (POSTECH)"},
+    {"date": "Jul 2025", "title": "Advances in Neural Network Methods for PDEs and Optimization (Parts I–III)", "event": "SIAM / CAIMS Annual Meetings", "place": "Montréal, Canada"},
+    {"date": "May 2024", "title": "Surface Reconstruction: PDEs, Variational, and Deep Learning Methods (Parts I–II)", "event": "SIAM Conference on Imaging Science", "place": "Atlanta, USA"},
+    {"date": "Mar 2024", "title": "Numerical Methods for Level-Set and Eikonal Equations: Theory and Applications", "event": "ALGORITMY 2024", "place": "High Tatras, Slovakia"},
+    {"date": "Aug 2023", "title": "Numerical Algorithms for the Eikonal Equation and Its Applications", "event": "ICIAM 2023, International Congress on Industrial and Applied Mathematics", "place": "Tokyo, Japan"},
+    {"date": "Jul 2019", "title": "Advanced Numerical Methods for Evolving Manifolds", "event": "ICIAM 2019, International Congress on Industrial and Applied Mathematics", "place": "Valencia, Spain"},
+    {"date": "Jun 2018", "title": "Moving Interface Problems in Computational Fluid Dynamics", "event": "6th European Conference on Computational Mechanics / 7th European Conference on Computational Fluid Dynamics", "place": "Glasgow, UK"},
+    {"date": "Jul 2016", "title": "Contemporary Topics in Image Processing and Computer Vision", "event": "Europe-Korea Conference on Science and Technology (EKC 2016)", "place": "Berlin, Germany"},
+    {"date": "May 2016", "title": "PDE-based Image Processing: Reconstruction, Filtering, Segmentation, Compression, and Inpainting", "event": "SIAM Conference on Imaging Science", "place": "Albuquerque, New Mexico, USA"},
+    {"date": "Apr 2015", "title": "Surface Evolution Methods in Gasoline Direct Injection Combustion Engines", "event": "International Conference on Numerical Combustion", "place": "Avignon, France"},
+    {"date": "May 2012", "title": "Functional Analysis and Accurate Numerical Methods in Image Processing", "event": "SIAM Conference on Imaging Science", "place": "Philadelphia, USA"},
+    {"date": "Jul 2011", "title": "Fast Optimization Algorithms in Image Processing and Its Applications", "event": "ICIAM 2011, International Congress on Industrial and Applied Mathematics", "place": "Vancouver, Canada"},
+    {"date": "Apr 2010", "title": "Surface Reconstruction from Sparse Gradient Fields, Unorganized Point Clouds, and Photometric Stereo", "event": "SIAM Conference on Imaging Science", "place": "Chicago, USA"}
   ]},
   {"id": "contributed", "tab": "Contributed", "heading": "Contributed talks", "items": [
     {"date": "Jul 2026", "title": "From Vanishing Viscosity Method to Neural Network Solvers for Eikonal Equations", "event": "WCCM / ECCOMAS 2026", "place": "Munich, Germany", "authors": ["Eunsuh Kim", "Yesom Park", "Jihun Han", "Minseok Choi", "Jooyoung Hahn"]},
@@ -45,27 +66,6 @@
     {"date": "May 2006", "title": "Highly accurate segmentation using geometric attraction-driven flow in edge-regions", "event": "SIAM Conference on Imaging Science (IS06)", "place": "Minneapolis, USA", "authors": ["Jooyoung Hahn", "Chang-Ock Lee"]},
     {"date": "May 2005", "title": "Segmentation and background extraction with application to e-catalogue", "event": "KSIAM 2005 Spring Conference", "place": "Seoul National University, Seoul, Korea", "authors": ["Jooyoung Hahn", "Kiwan Jeon", "Chang-Ock Lee", "Kilsu Park"]},
     {"date": "Feb 2005", "title": "A variational approach to blending based on warping for non-overlapped images", "event": "3rd Chinese-Korean Joint Workshop on Recent Advances in Numerical Analysis and Its Applications", "place": "Seogwipo, Jeju, Korea", "authors": ["Chang-Ock Lee", "Kiwan Jeon", "Youngsoo Ha", "Jooyoung Hahn"]}
-  ]},
-  {"id": "sessions", "tab": "Sessions", "heading": "Organized sessions", "items": [
-    {"date": "Jul 2026", "title": "Neural Network Solvers for PDEs: Bridging Theory and Practice in Scientific Computing (Parts I–V)", "event": "WCCM / ECCOMAS 2026", "place": "Munich, Germany", "note": "with Alexander Heinlein (TU Delft)"},
-    {"date": "Sep 2025", "title": "Advancements in Neural Network Solvers for PDEs: Applications and Challenges", "event": "ACOMEN 2025, 9th International Conference on Advanced Computational Methods in Engineering and Applied Mathematics", "place": "Ghent, Belgium", "note": "with Minseok Choi (POSTECH)"},
-    {"date": "Jul 2025", "title": "Advances in Neural Network Methods for PDEs and Optimization (Parts I–III)", "event": "SIAM / CAIMS Annual Meetings", "place": "Montréal, Canada"},
-    {"date": "May 2024", "title": "Surface Reconstruction: PDEs, Variational, and Deep Learning Methods (Parts I–II)", "event": "SIAM Conference on Imaging Science", "place": "Atlanta, USA"},
-    {"date": "Mar 2024", "title": "Numerical Methods for Level-Set and Eikonal Equations: Theory and Applications", "event": "ALGORITMY 2024", "place": "High Tatras, Slovakia"},
-    {"date": "Aug 2023", "title": "Numerical Algorithms for the Eikonal Equation and Its Applications", "event": "ICIAM 2023, International Congress on Industrial and Applied Mathematics", "place": "Tokyo, Japan"},
-    {"date": "Jul 2019", "title": "Advanced Numerical Methods for Evolving Manifolds", "event": "ICIAM 2019, International Congress on Industrial and Applied Mathematics", "place": "Valencia, Spain"},
-    {"date": "Jun 2018", "title": "Moving Interface Problems in Computational Fluid Dynamics", "event": "6th European Conference on Computational Mechanics / 7th European Conference on Computational Fluid Dynamics", "place": "Glasgow, UK"},
-    {"date": "Jul 2016", "title": "Contemporary Topics in Image Processing and Computer Vision", "event": "Europe-Korea Conference on Science and Technology (EKC 2016)", "place": "Berlin, Germany"},
-    {"date": "May 2016", "title": "PDE-based Image Processing: Reconstruction, Filtering, Segmentation, Compression, and Inpainting", "event": "SIAM Conference on Imaging Science", "place": "Albuquerque, New Mexico, USA"},
-    {"date": "Apr 2015", "title": "Surface Evolution Methods in Gasoline Direct Injection Combustion Engines", "event": "International Conference on Numerical Combustion", "place": "Avignon, France"},
-    {"date": "May 2012", "title": "Functional Analysis and Accurate Numerical Methods in Image Processing", "event": "SIAM Conference on Imaging Science", "place": "Philadelphia, USA"},
-    {"date": "Jul 2011", "title": "Fast Optimization Algorithms in Image Processing and Its Applications", "event": "ICIAM 2011, International Congress on Industrial and Applied Mathematics", "place": "Vancouver, Canada"},
-    {"date": "Apr 2010", "title": "Surface Reconstruction from Sparse Gradient Fields, Unorganized Point Clouds, and Photometric Stereo", "event": "SIAM Conference on Imaging Science", "place": "Chicago, USA"}
-  ]},
-  {"id": "committees", "tab": "Committees", "heading": "Committees", "items": [
-    {"date": "Aug 2027", "title": "Czech-Korean Workshop on Applied Mathematics", "event": "20–22 August 2027", "place": "", "status": "Coming soon"},
-    {"date": "Aug 2018", "title": "Europe-Korea Conference on Science and Technology (EKC 2018)", "event": "Session: Information Technology and Machine Learning", "place": "Glasgow, UK"},
-    {"date": "Jul 2017", "title": "Europe-Korea Conference on Science and Technology (EKC 2017)", "event": "Session: Industrial Mathematics for Scientific Computing: Imaging, Machine Learning and Computational Fluid Dynamics", "place": "Stockholm, Sweden"}
   ]}
  ]
 }
