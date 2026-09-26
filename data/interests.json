@@ -56,7 +56,7 @@
    "id": "MultiChromat",
    "group": "Geometry-informed TDA",
    "label": "Trie indexing of GC×GC–MS food spectra",
-   "description": "GC×GC–MS records hundreds of thousands of mass spectra per sample; the wine, coffee and honey data exceed 800 GB. Each spectrum is read as a word of fragment masses, from most to least intense, and all spectra form one trie, so spectra with equal leading masses share a branch. The trie is used to ask which spectra, read as chemical words, two samples share and which occur in only one.",
+   "description": "GC×GC–MS records hundreds of thousands of mass spectra per sample. Each spectrum is read as a word of fragment masses, from most to least intense, and all spectra form one trie, so spectra with equal leading masses share a branch. The trie is used to ask which spectra, read as chemical words, two samples share and which occur in only one.",
    "collaborators": "Nemanja Koljančić and Ivan Špánik",
    "figure": "assets/interests/MultiChromat.png",
    "alt": "Mass spectrum with three highlighted peaks above a tree of many spectra; its path follows masses 91, 105, 77.",
