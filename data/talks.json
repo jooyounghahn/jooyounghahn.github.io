@@ -47,8 +47,8 @@
     {"date": "Feb 2005", "title": "A variational approach to blending based on warping for non-overlapped images", "event": "3rd Chinese-Korean Joint Workshop on Recent Advances in Numerical Analysis and Its Applications", "place": "Seogwipo, Jeju, Korea", "authors": ["Chang-Ock Lee", "Kiwan Jeon", "Youngsoo Ha", "Jooyoung Hahn"]}
   ]},
   {"id": "sessions", "tab": "Sessions", "heading": "Organized sessions", "items": [
-    {"date": "Jul 2026", "title": "Neural Network Solvers for PDEs: Bridging Theory and Practice in Scientific Computing (Parts I–V)", "event": "WCCM / ECCOMAS 2026", "place": "Munich, Germany"},
-    {"date": "Sep 2025", "title": "Advancements in Neural Network Solvers for PDEs: Applications and Challenges", "event": "ACOMEN 2025, 9th International Conference on Advanced Computational Methods in Engineering and Applied Mathematics", "place": "Ghent, Belgium"},
+    {"date": "Jul 2026", "title": "Neural Network Solvers for PDEs: Bridging Theory and Practice in Scientific Computing (Parts I–V)", "event": "WCCM / ECCOMAS 2026", "place": "Munich, Germany", "note": "with Alexander Heinlein (TU Delft)"},
+    {"date": "Sep 2025", "title": "Advancements in Neural Network Solvers for PDEs: Applications and Challenges", "event": "ACOMEN 2025, 9th International Conference on Advanced Computational Methods in Engineering and Applied Mathematics", "place": "Ghent, Belgium", "note": "with Minseok Choi (POSTECH)"},
     {"date": "Jul 2025", "title": "Advances in Neural Network Methods for PDEs and Optimization (Parts I–III)", "event": "SIAM / CAIMS Annual Meetings", "place": "Montréal, Canada"},
     {"date": "May 2024", "title": "Surface Reconstruction: PDEs, Variational, and Deep Learning Methods (Parts I–II)", "event": "SIAM Conference on Imaging Science", "place": "Atlanta, USA"},
     {"date": "Mar 2024", "title": "Numerical Methods for Level-Set and Eikonal Equations: Theory and Applications", "event": "ALGORITMY 2024", "place": "High Tatras, Slovakia"},
