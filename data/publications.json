@@ -23,7 +23,7 @@
   {
    "year": 2026,
    "type": "journal",
-   "status": "in press",
+   "status": "published",
    "authors": [
     "Seol Ah Park",
     "Davide Gurnari",
@@ -33,13 +33,13 @@
    ],
    "title": "Spatial analysis of malignant-immune cell interactions in the tumor microenvironment using topological data analysis",
    "venue": "npj Systems Biology and Applications",
-   "volume": "",
-   "issue": "",
-   "pages": "",
+   "volume": "12",
+   "issue": "1",
+   "pages": "141",
    "doi": "10.1038/s41540-026-00763-7",
    "url": "",
    "paper_key": "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
-   "evidence": "Re-verified 24 Sep 2026: doi.org 200 -> nature.com; page still uneditedManuscript=true, online 13 Jun 2026, citation_firstpage empty, no volume/article number in Crossref. Author order from publisher meta (Park, Gurnari, Dłotko, Kim, Hahn) differs from tex and from bioRxiv 10.1101/2025.03.27.645762."
+   "evidence": "Re-verified 29 Sep 2026: nature.com meta and Crossref give vol. 12, issue 1, article 141 (online 13 Jun 2026); author order Park, Gurnari, Dłotko, Kim, Hahn."
   },
   {
    "year": 2026,
