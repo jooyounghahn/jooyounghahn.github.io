@@ -228,6 +228,12 @@ h2.sec.band{margin:1.6rem 0 .2rem;padding:.5rem .8rem;background:var(--side);bor
 .dlist .te+.te{margin-top:.15rem}
 .dlist .te a{white-space:nowrap}
 .dlist .st{color:var(--em);font-weight:600}
+.facts{display:grid;gap:.1rem .9rem;margin:.45rem 0 .1rem;font-size:.87rem;line-height:1.45}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0}
+@media (min-width:460px){
+  .facts>div{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:.9rem}
+}
 @media (min-width:720px){
   .dlist li{grid-template-columns:5.6rem minmax(0,1fr);gap:1rem}
   .dlist .td{padding-top:.1rem}

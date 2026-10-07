@@ -502,8 +502,9 @@ def page_talks(talks) -> str:
 
 
 def page_jobs(jobs) -> str:
-    """Each item: period, title, status, optional where, note and links; a link with
-    "file" points at a flyer that build() copies into jobs/ unchanged."""
+    """Each item: period, title, status, optional where, note, facts (label/value pairs,
+    e.g. deadlines) and links; a link with "file" points at a flyer that build() copies
+    into jobs/ unchanged."""
     nt = ' target="_blank" rel="noopener"'
     parts = ['<h1 class="page">Jobs</h1>']
     if jobs.get("lede"):
@@ -514,11 +515,14 @@ def page_jobs(jobs) -> str:
             meta = " · ".join(x for x in (it.get("where"), f'<span class="st">{esc(it["status"])}</span>'
                                           if it.get("status") else "") if x)
             note = f'<p class="te">{txt(it["note"])}</p>' if it.get("note") else ""
+            facts = "".join(f'<div><dt>{txt(f["label"])}</dt><dd>{txt(f["value"])}</dd></div>'
+                            for f in it.get("facts", []))
+            facts = f'<dl class="facts">{facts}</dl>' if facts else ""
             links = " · ".join(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>' for l in it.get("links", []))
             links = f'<p class="te">{links}</p>' if links else ""
             lis.append(f'<li><span class="td">{esc(it.get("period", ""))}</span><div>'
                        f'<p class="tt">{txt(it["title"])}</p>'
-                       f'<p class="te">{meta}</p>{note}{links}</div></li>')
+                       f'<p class="te">{meta}</p>{note}{facts}{links}</div></li>')
         parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
     return "\n".join(parts)
 

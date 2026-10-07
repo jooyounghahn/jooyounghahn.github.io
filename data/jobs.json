@@ -1,13 +1,68 @@
 {
- "_source": "MIND-MAP: GAČR 27-25263L (spelled MIND-MAP in every proposal document). CROP: ../Research_Fund/CROP/CROP Postdoc Flyer -EURAXESS-.html, published unchanged; the status line is on this page only.",
+ "_source": "MIND-MAP: GAČR 27-25263L (spelled MIND-MAP in every proposal document); the two flyers in assets/flyers/ are published unchanged and are pre-announcements, not the formal calls. CROP: ../Research_Fund/CROP/CROP Postdoc Flyer -EURAXESS-.html, published unchanged; the status line is on this page only.",
  "groups": [
   {
    "title": "Positions",
    "items": [
     {
-     "period": "2027",
+     "period": "2027–2029",
      "title": "PhD position in the MIND-MAP project",
-     "status": "Coming soon"
+     "where": "Department of Software Engineering, FNSPE, Czech Technical University in Prague",
+     "status": "Pre-announcement, official call to follow",
+     "note": "Geometry-informed topological data analysis, PDE and deep-learning segmentation of microglia in 3D + time microscopy. Funded for three years; supervised by Jooyoung Hahn, with partners in Warsaw and at ISTA.",
+     "facts": [
+      {
+       "label": "Express interest",
+       "value": "By 20 November 2026 — a CV and a few lines on your research interests, to jooyoung.hahn (A T) fjfi.cvut.cz"
+      },
+      {
+       "label": "Official call",
+       "value": "Expected mid-December 2026; formal conditions announced separately"
+      },
+      {
+       "label": "Starts",
+       "value": "1 March 2027"
+      },
+      {
+       "label": "Funding",
+       "value": "Three years, 2027–2029, about 43 000 CZK net per month"
+      }
+     ],
+     "links": [
+      {
+       "label": "Flyer",
+       "href": "jobs/MIND-MAP_PhD_CTU_Prague.html",
+       "file": "assets/flyers/MIND-MAP_PhD_CTU_Prague.html"
+      }
+     ]
+    },
+    {
+     "period": "2027–2029",
+     "title": "PhD and postdoc positions in the MIND-MAP project, University of Warsaw",
+     "where": "University of Warsaw — with Paweł Dłotko, not at CTU in Prague",
+     "status": "Pre-announcement, official call to follow",
+     "note": "Two funded openings on the Warsaw side of the same project: topological descriptors of cell shapes that change in time, shape trajectories and Ball Mapper visualization. Apply to Paweł Dłotko, who supervises these positions; the flyer gives his contact address.",
+     "facts": [
+      {
+       "label": "Positions",
+       "value": "One PhD and one postdoc, funded for three years, 2027–2029"
+      },
+      {
+       "label": "Express interest",
+       "value": "A CV, which role you are interested in, and a few lines on your background"
+      },
+      {
+       "label": "Official call",
+       "value": "Formal recruitment and eligibility criteria announced separately"
+      }
+     ],
+     "links": [
+      {
+       "label": "Flyer",
+       "href": "jobs/MIND-MAP_PhD_Postdoc_Warsaw.html",
+       "file": "assets/flyers/MIND-MAP_PhD_Postdoc_Warsaw.html"
+      }
+     ]
     },
     {
      "period": "2026",
