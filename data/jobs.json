@@ -30,11 +30,13 @@
      ],
      "links": [
       {
-       "label": "Flyer",
+       "label": "Read the flyer",
        "href": "jobs/MIND-MAP_PhD_CTU_Prague.html",
-       "file": "assets/flyers/MIND-MAP_PhD_CTU_Prague.html"
+       "file": "assets/flyers/MIND-MAP_PhD_CTU_Prague.html",
+       "cta": "Full details, one page"
       }
-     ]
+     ],
+     "new": true
     },
     {
      "period": "2027–2029",
@@ -58,11 +60,13 @@
      ],
      "links": [
       {
-       "label": "Flyer",
+       "label": "Read the flyer",
        "href": "jobs/MIND-MAP_PhD_Postdoc_Warsaw.html",
-       "file": "assets/flyers/MIND-MAP_PhD_Postdoc_Warsaw.html"
+       "file": "assets/flyers/MIND-MAP_PhD_Postdoc_Warsaw.html",
+       "cta": "Full details, one page"
       }
-     ]
+     ],
+     "new": true
     },
     {
      "period": "2026",

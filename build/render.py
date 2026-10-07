@@ -185,7 +185,8 @@ def shell(content: dict, page: str, fname: str, title: str, body: str, build: di
         out = []
         for pid, label, slabel, href in NAV:
             cur = ' aria-current="page"' if pid == page else ""
-            out.append(f'<a href="{href}"{cur}>{esc(slabel if short else label)}</a>')
+            new = '<span class="new" aria-label="new">New</span>' if build.get("new_pages", {}).get(pid) else ""
+            out.append(f'<a href="{href}"{cur}>{esc(slabel if short else label)}{new}</a>')
         if build.get("cv_href"):
             out.append(f'<a href="{esc(build["cv_href"])}" target="_blank" rel="noopener">CV'
                        f'<span class="ext">PDF</span></a>')
@@ -503,8 +504,8 @@ def page_talks(talks) -> str:
 
 def page_jobs(jobs) -> str:
     """Each item: period, title, status, optional where, note, facts (label/value pairs,
-    e.g. deadlines) and links; a link with "file" points at a flyer that build() copies
-    into jobs/ unchanged."""
+    e.g. deadlines), new (flag) and links; a link with "file" points at a flyer that
+    build() copies into jobs/ unchanged, and "cta" makes it the prominent button."""
     nt = ' target="_blank" rel="noopener"'
     parts = ['<h1 class="page">Jobs</h1>']
     if jobs.get("lede"):
@@ -518,10 +519,15 @@ def page_jobs(jobs) -> str:
             facts = "".join(f'<div><dt>{txt(f["label"])}</dt><dd>{txt(f["value"])}</dd></div>'
                             for f in it.get("facts", []))
             facts = f'<dl class="facts">{facts}</dl>' if facts else ""
-            links = " · ".join(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>' for l in it.get("links", []))
-            links = f'<p class="te">{links}</p>' if links else ""
+            cta = "".join(f'<a class="cta" href="{esc(l["href"])}"{nt}>{esc(l["label"])}'
+                          f'<span class="sub">{esc(l.get("cta", ""))}</span></a>'
+                          for l in it.get("links", []) if l.get("cta"))
+            links = " · ".join(f'<a href="{esc(l["href"])}"{nt}>{esc(l["label"])}</a>'
+                               for l in it.get("links", []) if not l.get("cta"))
+            links = (f'<div class="ctas">{cta}</div>' if cta else "") + (f'<p class="te">{links}</p>' if links else "")
+            new = '<span class="new" aria-label="new">New</span>' if it.get("new") else ""
             lis.append(f'<li><span class="td">{esc(it.get("period", ""))}</span><div>'
-                       f'<p class="tt">{txt(it["title"])}</p>'
+                       f'<p class="tt">{txt(it["title"])}{new}</p>'
                        f'<p class="te">{meta}</p>{note}{facts}{links}</div></li>')
         parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
     return "\n".join(parts)
@@ -607,7 +613,8 @@ def build(out_dir: str = "docs") -> Path:
     site_url = b.get("site_url", "")
     if site_url and not site_url.endswith("/"):
         site_url += "/"
-    bld = {"photo_size": photo_size, "cv_href": cv_name,
+    new_pages = {"jobs": any(i.get("new") for g in jobs.get("groups", []) for i in g.get("items", []))}
+    bld = {"photo_size": photo_size, "cv_href": cv_name, "new_pages": new_pages,
            "site_url": site_url, "updated": b.get("updated") or date.today().strftime("%B %Y")}
 
     pages = {
