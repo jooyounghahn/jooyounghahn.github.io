@@ -3,6 +3,27 @@
  "lede": "By type and year. Also on <a href=\"https://scholar.google.com/citations?user=4w2vNhcAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> and <a href=\"https://orcid.org/0000-0003-4357-1009\" target=\"_blank\" rel=\"noopener\">ORCID</a>.",
  "entries": [
   {
+   "year": 2027,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Eunsuh Kim",
+    "Dongjun Lee",
+    "Heechang Kim",
+    "Jooyoung Hahn",
+    "Minseok Choi"
+   ],
+   "title": "Neural augmented Lagrangian method for approximating viscosity solution of the eikonal equation",
+   "venue": "Journal of Computational Physics",
+   "volume": "569",
+   "issue": "",
+   "pages": "115466",
+   "doi": "10.1016/j.jcp.2026.115466",
+   "url": "",
+   "paper_key": "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
+   "evidence": "Published 10 Oct 2026: Crossref gives vol. 569, article 115466, issue dated January 2027 (PII S0021999126008144)."
+  },
+  {
    "year": 2026,
    "type": "journal",
    "status": "published",
@@ -83,6 +104,63 @@
    "url": "",
    "paper_key": "Koljancic2025_UntargetedChemicalProfilingTwoDimensiona",
    "evidence": "Re-verified: doi.org 403 to curl (ACS), Crossref 200: 97(46) 25853-25867, online 14 Nov 2025; authors match Crossref and library .md."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Yesom Park",
+    "Imseong Park",
+    "Jooyoung Hahn",
+    "Myungjoo Kang"
+   ],
+   "title": "Neural Shortest Path for Surface Reconstruction from Point Clouds",
+   "venue": "arXiv:2502.06047",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://arxiv.org/abs/2502.06047",
+   "paper_key": "",
+   "evidence": "Re-verified: arXiv abs page, only v1 (9 Feb 2025), no journal-ref or DOI; Crossref title search finds no published version. Tex: under review at International Journal of Computer Vision. Not in PAPERS_HAHN."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Yesom Park",
+    "Jooyoung Hahn"
+   ],
+   "title": "Deep Learning with Viscosity-Reduction Variational Approach for Anisotropic Eikonal Equations",
+   "venue": "SSRN",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "10.2139/ssrn.5361725",
+   "url": "",
+   "paper_key": "",
+   "evidence": "Re-verified: Crossref posted-content 10.2139/ssrn.5361725 (created 22 Jul 2025), the later of two SSRN postings (the other is 10.2139/ssrn.5252237, 13 May 2025, the one cited in commented-out tex). doi.org resolves to ssrn.com (403 to curl). No published version in Crossref. Tex: under review at Journal of Computational Physics. Not in PAPERS_HAHN."
+  },
+  {
+   "year": 2025,
+   "type": "preprint",
+   "status": "under review",
+   "authors": [
+    "Jooyoung Hahn",
+    "Karol Mikula",
+    "Peter Frolkovič"
+   ],
+   "title": "Eikonal boundary condition for level set method",
+   "venue": "arXiv:2504.05845",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "",
+   "url": "https://arxiv.org/abs/2504.05845",
+   "paper_key": "",
+   "evidence": "Re-verified: arXiv abs page (v1 8 Apr 2025, v2 14 Aug 2026), no journal-ref or DOI; earlier SSRN posting 10.2139/ssrn.4712362 (Jan 2024). No published version in Crossref. Tex: under review at Japan Journal of Industrial and Applied Mathematics. Not in PAPERS_HAHN."
   },
   {
    "year": 2024,
@@ -209,6 +287,23 @@
    "evidence": "Re-verified: doi.org 200; Crossref 14(3) 865-879, 2021; matches tex."
   },
   {
+   "year": 2021,
+   "type": "patent",
+   "status": "published",
+   "authors": [
+    "Seungjun Jeon",
+    "Jun Beum Kim",
+    "Jooyoung Hahn",
+    "Seong Weon Jeong"
+   ],
+   "title": "Real-time fine dust monitoring system and its methods",
+   "venue": "KR20210050831A",
+   "doi": "",
+   "url": "https://patents.google.com/patent/KR20210050831A/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
    "year": 2020,
    "type": "proceedings",
    "status": "published",
@@ -311,6 +406,25 @@
    "evidence": "Re-verified: doi.org 200; Crossref book-chapter pp 81-89 (2017). PROMS 'Book 200' confirmed by web search (Walmart/retail listing of the 'Hyperbolic, Elliptic and Parabolic Problems' volume). Editors Cancès, Omnes (Crossref book record)."
   },
   {
+   "year": 2017,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Jie Qiu",
+    "Jooyoung Hahn",
+    "Eiji Sugisaki",
+    "Lei Jia",
+    "Xue-Cheng Tai",
+    "Hock Soon Seah"
+   ],
+   "title": "A method for reconstructing a 3D surface from a 2D sketch",
+   "venue": "CN103460252B",
+   "doi": "",
+   "url": "https://patents.google.com/patent/CN103460252B/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
    "year": 2014,
    "type": "journal",
    "status": "published",
@@ -390,6 +504,22 @@
    "evidence": "Re-verified: doi.org 200 (global-sci); Crossref 6(1) 297-324, 2013, 6 authors in same order. DOI was missing in tex."
   },
   {
+   "year": 2013,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Xue-Cheng Tai",
+    "Jooyoung Hahn",
+    "Jason Ginmo Chung"
+   ],
+   "title": "Methods and systems for generating enhanced images using Euler's elastica model",
+   "venue": "US8447135B2",
+   "doi": "",
+   "url": "https://patents.google.com/patent/US8447135B2/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
    "year": 2012,
    "type": "journal",
    "status": "published",
@@ -447,6 +577,25 @@
    "url": "",
    "paper_key": "Duan2012_AFastAugmentedLagrangianMethodEulersElas",
    "evidence": "Re-verified: doi.org 200; Crossref pp 144-156, book issued 2012 (conference 2011); LNCS 6667."
+  },
+  {
+   "year": 2012,
+   "type": "patent",
+   "status": "published",
+   "authors": [
+    "Jie Qiu",
+    "Jooyoung Hahn",
+    "Eiji Sugisaki",
+    "Lei Jia",
+    "Xue-Cheng Tai",
+    "Hock Soon Seah"
+   ],
+   "title": "A method for reconstructing a 3D surface from a 2D sketch",
+   "venue": "WO2012118439A1",
+   "doi": "",
+   "url": "https://patents.google.com/patent/WO2012118439A1/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
   },
   {
    "year": 2011,
@@ -543,6 +692,22 @@
    "evidence": "Re-verified: doi.org 200; Crossref pp 490-501 (pages missing in tex), 2009. LNCS 5567 confirmed by web search (Amazon listing). Editors Tai, Mørken, Lysaker, Lie."
   },
   {
+   "year": 2009,
+   "type": "patent",
+   "status": "granted",
+   "authors": [
+    "Chang-Ock Lee",
+    "Sung Ha Park",
+    "Jooyoung Hahn"
+   ],
+   "title": "Method for image segmentation using statistically reinstating force and multi-resolution",
+   "venue": "KR100925180B1",
+   "doi": "",
+   "url": "https://patents.google.com/patent/KR100925180B1/en",
+   "paper_key": "",
+   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
+  },
+  {
    "year": 2008,
    "type": "journal",
    "status": "published",
@@ -622,173 +787,6 @@
    "url": "",
    "paper_key": "SukhoLee2006_ConductivityImageReconstructionDefective",
    "evidence": "Re-verified: doi.org resolves to IEEE Xplore document 1583763; Crossref 25(2) 168-176, Feb 2006, 8 authors in same order (last listed as 'J. Hahn'). Title capitalization from the published PDF in the library. DOI was missing in tex."
-  },
-  {
-   "year": 2025,
-   "type": "preprint",
-   "status": "under review",
-   "authors": [
-    "Yesom Park",
-    "Imseong Park",
-    "Jooyoung Hahn",
-    "Myungjoo Kang"
-   ],
-   "title": "Neural Shortest Path for Surface Reconstruction from Point Clouds",
-   "venue": "arXiv:2502.06047",
-   "volume": "",
-   "issue": "",
-   "pages": "",
-   "doi": "",
-   "url": "https://arxiv.org/abs/2502.06047",
-   "paper_key": "",
-   "evidence": "Re-verified: arXiv abs page, only v1 (9 Feb 2025), no journal-ref or DOI; Crossref title search finds no published version. Tex: under review at International Journal of Computer Vision. Not in PAPERS_HAHN."
-  },
-  {
-   "year": 2025,
-   "type": "preprint",
-   "status": "under review",
-   "authors": [
-    "Yesom Park",
-    "Jooyoung Hahn"
-   ],
-   "title": "Deep Learning with Viscosity-Reduction Variational Approach for Anisotropic Eikonal Equations",
-   "venue": "SSRN",
-   "volume": "",
-   "issue": "",
-   "pages": "",
-   "doi": "10.2139/ssrn.5361725",
-   "url": "",
-   "paper_key": "",
-   "evidence": "Re-verified: Crossref posted-content 10.2139/ssrn.5361725 (created 22 Jul 2025), the later of two SSRN postings (the other is 10.2139/ssrn.5252237, 13 May 2025, the one cited in commented-out tex). doi.org resolves to ssrn.com (403 to curl). No published version in Crossref. Tex: under review at Journal of Computational Physics. Not in PAPERS_HAHN."
-  },
-  {
-   "year": 2025,
-   "type": "preprint",
-   "status": "under review",
-   "authors": [
-    "Jooyoung Hahn",
-    "Karol Mikula",
-    "Peter Frolkovič"
-   ],
-   "title": "Eikonal boundary condition for level set method",
-   "venue": "arXiv:2504.05845",
-   "volume": "",
-   "issue": "",
-   "pages": "",
-   "doi": "",
-   "url": "https://arxiv.org/abs/2504.05845",
-   "paper_key": "",
-   "evidence": "Re-verified: arXiv abs page (v1 8 Apr 2025, v2 14 Aug 2026), no journal-ref or DOI; earlier SSRN posting 10.2139/ssrn.4712362 (Jan 2024). No published version in Crossref. Tex: under review at Japan Journal of Industrial and Applied Mathematics. Not in PAPERS_HAHN."
-  },
-  {
-   "year": 2025,
-   "type": "submitted",
-   "status": "under review",
-   "authors": [
-    "Eunsuh Kim",
-    "Dongjun Lee",
-    "Heechang Kim",
-    "Jooyoung Hahn",
-    "Minseok Choi"
-   ],
-   "title": "Neural Augmented Lagrangian Method for Approximating Viscosity Solution of the Eikonal Equation",
-   "venue": "Journal of Computational Physics",
-   "volume": "",
-   "issue": "",
-   "pages": "",
-   "doi": "",
-   "url": "",
-   "paper_key": "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
-   "evidence": "PAPERS_HAHN holds revision R1 (JCOMP-D-25-02459R1); publication_Hahn.tex lists it as under review at JCP; no public preprint (checked 2026-09-24).",
-   "hidden": true,
-   "hidden_note": "removed from the site for now (2026-09-24); under review, no public preprint"
-  },
-  {
-   "year": 2021,
-   "type": "patent",
-   "status": "published",
-   "authors": [
-    "Seungjun Jeon",
-    "Jun Beum Kim",
-    "Jooyoung Hahn",
-    "Seong Weon Jeong"
-   ],
-   "title": "Real-time fine dust monitoring system and its methods",
-   "venue": "KR20210050831A",
-   "doi": "",
-   "url": "https://patents.google.com/patent/KR20210050831A/en",
-   "paper_key": "",
-   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
-  },
-  {
-   "year": 2017,
-   "type": "patent",
-   "status": "granted",
-   "authors": [
-    "Jie Qiu",
-    "Jooyoung Hahn",
-    "Eiji Sugisaki",
-    "Lei Jia",
-    "Xue-Cheng Tai",
-    "Hock Soon Seah"
-   ],
-   "title": "A method for reconstructing a 3D surface from a 2D sketch",
-   "venue": "CN103460252B",
-   "doi": "",
-   "url": "https://patents.google.com/patent/CN103460252B/en",
-   "paper_key": "",
-   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
-  },
-  {
-   "year": 2013,
-   "type": "patent",
-   "status": "granted",
-   "authors": [
-    "Xue-Cheng Tai",
-    "Jooyoung Hahn",
-    "Jason Ginmo Chung"
-   ],
-   "title": "Methods and systems for generating enhanced images using Euler's elastica model",
-   "venue": "US8447135B2",
-   "doi": "",
-   "url": "https://patents.google.com/patent/US8447135B2/en",
-   "paper_key": "",
-   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
-  },
-  {
-   "year": 2012,
-   "type": "patent",
-   "status": "published",
-   "authors": [
-    "Jie Qiu",
-    "Jooyoung Hahn",
-    "Eiji Sugisaki",
-    "Lei Jia",
-    "Xue-Cheng Tai",
-    "Hock Soon Seah"
-   ],
-   "title": "A method for reconstructing a 3D surface from a 2D sketch",
-   "venue": "WO2012118439A1",
-   "doi": "",
-   "url": "https://patents.google.com/patent/WO2012118439A1/en",
-   "paper_key": "",
-   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
-  },
-  {
-   "year": 2009,
-   "type": "patent",
-   "status": "granted",
-   "authors": [
-    "Chang-Ock Lee",
-    "Sung Ha Park",
-    "Jooyoung Hahn"
-   ],
-   "title": "Method for image segmentation using statistically reinstating force and multi-resolution",
-   "venue": "KR100925180B1",
-   "doi": "",
-   "url": "https://patents.google.com/patent/KR100925180B1/en",
-   "paper_key": "",
-   "evidence": "CV_Hahn_without_publication.tex, section Patent; checked on Google Patents 2026-09-24"
   }
  ]
 }

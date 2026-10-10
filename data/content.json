@@ -86,6 +86,7 @@
     "provenance": "Park2024 ReSDF, J. Comput. Phys. 502 (2024), 3-D results figure"
    },
    "papers": [
+    "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
     "Han2026_AStochasticVanishingViscosityApproachEik",
     "Park2024_ReSDF",
     "Park2023_PPoissonSurfaceReconstructionCurlFreeFlow"
@@ -239,12 +240,12 @@
    "synopsis": "Solves the eikonal equation with a meshless neural network trained on a stochastic (Feynman-Kac) form of the vanishing viscosity limit, including domains with internal obstacles."
   },
   "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution": {
-   "include": false,
+   "include": true,
+   "figure_src": "assets/paperfigs/Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution.jpg",
    "wiki_uid": "w91cff03ff217",
    "figure_file": "3fab3c3c-793c-42a7-9c61-00210f608a9a-40_1087_1062_379_505.jpg",
    "caption": "Distance field around two rectangular holes with a shortest path to circular source.",
-   "synopsis": "Approximates the eikonal viscosity solution with a neural network by maximizing the volume under its graph subject to a 1-Lipschitz constraint, enforced by an augmented Lagrangian method.",
-   "figure_note": "no figure until the paper is public (manuscript under review)"
+   "synopsis": "Approximates the eikonal viscosity solution with a neural network by maximizing the volume under its graph subject to a 1-Lipschitz constraint, enforced by an augmented Lagrangian method."
   },
   "Park2026_SpatialAnalysisMalignantImmuneCellInteractio": {
    "include": true,
