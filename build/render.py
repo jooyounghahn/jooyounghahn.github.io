@@ -420,10 +420,11 @@ PUB_TABS = [  # section id, tab label, entry types, section heading
 
 
 def pub_years(entries) -> str:
-    order = {"proceedings": 0, "presentation": 1}
+    order = {"proceedings": 1}          # proceedings after the journal papers of the same year
     out = []
     for y in sorted({e["year"] for e in entries}, reverse=True):
-        ys = sorted((e for e in entries if e["year"] == y), key=lambda e: (order.get(e["type"], 0), e["title"]))
+        # within a year: the order of publications.json, proceedings last
+        ys = sorted((e for e in entries if e["year"] == y), key=lambda e: order.get(e["type"], 0))
         lis = []
         for e in ys:
             kind = '<span class="kind">Proceedings</span>' if e["type"] == "proceedings" else ""

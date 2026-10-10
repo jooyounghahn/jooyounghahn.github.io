@@ -46,27 +46,6 @@
    "type": "journal",
    "status": "published",
    "authors": [
-    "Seol Ah Park",
-    "Davide Gurnari",
-    "Paweł Dłotko",
-    "Yongsoo Kim",
-    "Jooyoung Hahn"
-   ],
-   "title": "Spatial analysis of malignant-immune cell interactions in the tumor microenvironment using topological data analysis",
-   "venue": "npj Systems Biology and Applications",
-   "volume": "12",
-   "issue": "1",
-   "pages": "141",
-   "doi": "10.1038/s41540-026-00763-7",
-   "url": "",
-   "paper_key": "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
-   "evidence": "Re-verified 29 Sep 2026: nature.com meta and Crossref give vol. 12, issue 1, article 141 (online 13 Jun 2026); author order Park, Gurnari, Dłotko, Kim, Hahn."
-  },
-  {
-   "year": 2026,
-   "type": "journal",
-   "status": "published",
-   "authors": [
     "Geonho Hwang",
     "Yesom Park",
     "Yueun Lee",
@@ -82,6 +61,27 @@
    "url": "",
    "paper_key": "Hwang2026_LocalizedEstimationConditionNumbersMILUGraph",
    "evidence": "Re-verified: doi.org 403 to curl (SIAM), Crossref 200: 64(4) 1443-1477, online 30 Jul 2026, print Aug 2026, same 5 authors in same order. Tex said accepted, arXiv:2501.00245 (no journal-ref on arXiv)."
+  },
+  {
+   "year": 2026,
+   "type": "journal",
+   "status": "published",
+   "authors": [
+    "Seol Ah Park",
+    "Davide Gurnari",
+    "Paweł Dłotko",
+    "Yongsoo Kim",
+    "Jooyoung Hahn"
+   ],
+   "title": "Spatial analysis of malignant-immune cell interactions in the tumor microenvironment using topological data analysis",
+   "venue": "npj Systems Biology and Applications",
+   "volume": "12",
+   "issue": "1",
+   "pages": "141",
+   "doi": "10.1038/s41540-026-00763-7",
+   "url": "",
+   "paper_key": "Park2026_SpatialAnalysisMalignantImmuneCellInteractio",
+   "evidence": "Re-verified 29 Sep 2026: nature.com meta and Crossref give vol. 12, issue 1, article 141 (online 13 Jun 2026); author order Park, Gurnari, Dłotko, Kim, Hahn."
   },
   {
    "year": 2025,
