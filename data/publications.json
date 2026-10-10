@@ -3,7 +3,7 @@
  "lede": "By type and year. Also on <a href=\"https://scholar.google.com/citations?user=4w2vNhcAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Google Scholar</a> and <a href=\"https://orcid.org/0000-0003-4357-1009\" target=\"_blank\" rel=\"noopener\">ORCID</a>.",
  "entries": [
   {
-   "year": 2027,
+   "year": 2026,
    "type": "journal",
    "status": "published",
    "authors": [
@@ -21,7 +21,7 @@
    "doi": "10.1016/j.jcp.2026.115466",
    "url": "",
    "paper_key": "Kim2026_NeuralAugmentedLagrangianEikonalViscositySolution",
-   "evidence": "Published 10 Oct 2026: Crossref gives vol. 569, article 115466, issue dated January 2027 (PII S0021999126008144)."
+   "evidence": "Published 10 Oct 2026: Crossref gives vol. 569, article 115466 (PII S0021999126008144); Crossref dates the issue January 2027, listed here under 2026 as the year it appeared."
   },
   {
    "year": 2026,
