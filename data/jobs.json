@@ -6,26 +6,30 @@
    "items": [
     {
      "period": "2027–2029",
-     "title": "PhD position in the MIND-MAP project",
+     "title": "PhD and postdoc positions in the MIND-MAP project",
      "where": "Department of Software Engineering, FNSPE, Czech Technical University in Prague",
      "status": "Pre-announcement, official call to follow",
-     "note": "Geometry-informed topological data analysis, PDE and deep-learning segmentation of microglia in 3D + time microscopy. Funded for three years; supervised by Jooyoung Hahn, with partners in Warsaw and at ISTA.",
+     "note": "Geometry-informed topological data analysis, PDE and deep-learning segmentation of microglia in 3D + time microscopy. One PhD and one postdoc position, funded for three years; supervised by Jooyoung Hahn, with partners in Warsaw and at ISTA.",
      "facts": [
       {
+       "label": "Positions",
+       "value": "One PhD and one postdoc, funded for three years, 2027–2029"
+      },
+      {
        "label": "Express interest",
-       "value": "By 20 November 2026 — a CV and a few lines on your research interests, to jooyoung.hahn (A T) fjfi.cvut.cz"
+       "value": "PhD: by 5 December 2026 — a CV and a few lines on your research interests. Postdoc: a CV and a short research summary. To jooyoung.hahn (A T) fjfi.cvut.cz; say which position you aim for"
       },
       {
        "label": "Official call",
-       "value": "Expected mid-December 2026; formal conditions announced separately"
+       "value": "PhD: FNSPE application in mid-December 2026; formal conditions announced separately"
       },
       {
        "label": "Starts",
-       "value": "1 March 2027"
+       "value": "PhD 1 March 2027; postdoc start negotiable"
       },
       {
-       "label": "Funding",
-       "value": "Three years, 2027–2029, about 43 000 CZK net per month"
+       "label": "Pay",
+       "value": "Postdoc 70,000 CZK gross per month (full time). PhD 38,745 CZK gross per month (0.8 FTE) + 12,000 CZK tax-free doctoral stipend, about 43,000 CZK net"
       }
      ],
      "links": [
