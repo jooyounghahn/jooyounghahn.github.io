@@ -2,11 +2,20 @@
  "_source": "MIND-MAP: GAČR 27-25263L (spelled MIND-MAP in every proposal document); the two flyers in assets/flyers/ are published unchanged and are pre-announcements, not the formal calls. CROP: ../Research_Fund/CROP/CROP Postdoc Flyer -EURAXESS-.html, published unchanged; the status line is on this page only.",
  "groups": [
   {
-   "title": "Positions",
+   "title": "MIND-MAP",
+   "project": {
+    "name": "PhD and postdoc positions in MIND-MAP",
+    "full": "Microglia Integrative Network of Dynamics — Morphology, Analysis, and Prediction",
+    "tagline": "Study of the neurons' gardeners",
+    "body": [
+     "What does it mean when a brain cell changes its shape? In MIND-MAP we turn 3D + time microscopy of microglia into geometry, topology and a quantitative language for brain states. The project combines mathematical method development with real, challenging biological data: the goal is not merely to apply existing tools, but to develop new ones."
+    ],
+    "lead": "Two groups are recruiting, within a three-year project (2027–2029):"
+   },
    "items": [
     {
      "period": "2027–2029",
-     "title": "1 PhD and 1 postdoc positions in the MIND-MAP project",
+     "title": "1 PhD and 1 postdoc positions at CTU in Prague",
      "where": "Department of Software Engineering, FNSPE, Czech Technical University in Prague",
      "status": "Pre-announcement, official call to follow",
      "note": "Geometry-informed topological data analysis, PDE and deep-learning segmentation of microglia in 3D + time microscopy. One PhD and one postdoc position, funded for three years; supervised by Jooyoung Hahn, with partners in Warsaw and at ISTA.",
@@ -44,7 +53,7 @@
     },
     {
      "period": "2027–2029",
-     "title": "1 PhD and 1 postdoc positions in the MIND-MAP project, University of Warsaw",
+     "title": "1 PhD and 1 postdoc positions at the University of Warsaw",
      "where": "University of Warsaw — with Paweł Dłotko",
      "status": "Pre-announcement, official call to follow",
      "note": "Two funded openings on the Warsaw side of the same project: topological descriptors of cell shapes that change in time, shape trajectories and Ball Mapper visualization. Apply to Paweł Dłotko, who supervises these positions; the flyer gives his contact address.",
@@ -71,7 +80,12 @@
       }
      ],
      "new": true
-    },
+    }
+   ]
+  },
+  {
+   "title": "Other positions",
+   "items": [
     {
      "period": "2026",
      "title": "CROP Postdoc: Geometry-Aware Machine Learning & Topological Data Analysis",

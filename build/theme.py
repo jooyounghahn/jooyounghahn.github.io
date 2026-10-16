@@ -246,6 +246,17 @@ a.cta{display:inline-flex;flex-direction:column;gap:.1rem;padding:.5rem .95rem;b
 a.cta:hover{background:var(--accent-strong);border-color:var(--accent-strong);text-decoration:none}
 a.cta .sub{font-size:.8rem;font-weight:400;opacity:.85}
 
+/* Jobs: one project described, its openings indented underneath */
+.proj{margin-top:2.4rem}
+.proj h2.sec{margin-bottom:.2rem}
+.pfull{font-size:.95rem;color:var(--muted);line-height:1.45;max-width:44rem}
+.ptag{font-size:1.05rem;font-weight:650;color:var(--accent);margin:.7rem 0 .4rem}
+.pbody{font-size:.98rem;line-height:1.6;max-width:44rem}
+.pbody+.pbody{margin-top:.6rem}
+.plead{font-size:.95rem;color:var(--muted);margin:.9rem 0 .2rem}
+.dlist.sub{padding-left:.9rem;border-left:2px solid var(--rule)}
+@media (min-width:600px){.dlist.sub{padding-left:1.4rem}}
+
 .facts{display:grid;gap:.1rem .9rem;margin:.45rem 0 .1rem;font-size:.87rem;line-height:1.45}
 .facts dt{color:var(--muted)}
 .facts dd{margin:0}

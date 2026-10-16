@@ -504,7 +504,9 @@ def page_talks(talks) -> str:
 
 
 def page_jobs(jobs) -> str:
-    """Each item: period, title, status, optional where, note, facts (label/value pairs,
+    """A group is either a plain list or, with "project", a description (name, full,
+    tagline, body, lead) whose openings are indented under it.
+    Each item: period, title, status, optional where, note, facts (label/value pairs,
     e.g. deadlines), new (flag) and links; a link with "file" points at a flyer that
     build() copies into jobs/ unchanged, and "cta" makes it the prominent button."""
     nt = ' target="_blank" rel="noopener"'
@@ -530,7 +532,16 @@ def page_jobs(jobs) -> str:
             lis.append(f'<li><span class="td">{esc(it.get("period", ""))}</span><div>'
                        f'<p class="tt">{txt(it["title"])}{new}</p>'
                        f'<p class="te">{meta}</p>{note}{facts}{links}</div></li>')
-        parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
+        pr = g.get("project")
+        if pr:                      # one project, its openings indented under the description
+            head = (f'<h2 class="sec">{txt(pr["name"])}</h2>'
+                    + (f'<p class="pfull">{txt(pr["full"])}</p>' if pr.get("full") else "")
+                    + (f'<p class="ptag">{txt(pr["tagline"])}</p>' if pr.get("tagline") else "")
+                    + "".join(f'<p class="pbody">{txt(x)}</p>' for x in pr.get("body", []))
+                    + (f'<p class="plead">{txt(pr["lead"])}</p>' if pr.get("lead") else ""))
+            parts.append(f'<section class="proj">{head}<ol class="dlist sub">{"".join(lis)}</ol></section>')
+        else:
+            parts.append(f'<h2 class="sec">{txt(g["title"])}</h2><ol class="dlist">{"".join(lis)}</ol>')
     return "\n".join(parts)
 
 
